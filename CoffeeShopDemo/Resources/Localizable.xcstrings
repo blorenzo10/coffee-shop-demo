@@ -37,10 +37,24 @@
 
     },
     "Chocolate Croissant" : {
-
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Media luna de chocolate"
+          }
+        }
+      }
     },
     "Croissant" : {
-
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Media luna"
+          }
+        }
+      }
     },
     "Drinks" : {
       "extractionState" : "stale",
@@ -54,7 +68,14 @@
       }
     },
     "Ham & Cheese Croissant" : {
-
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Media luna jyc"
+          }
+        }
+      }
     },
     "Key" : {
       "extractionState" : "manual"
@@ -70,7 +91,14 @@
       }
     },
     "Muffin" : {
-
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Magdalena"
+          }
+        }
+      }
     },
     "My Order" : {
       "localizations" : {
@@ -120,7 +148,7 @@
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Chico"
+            "value" : "^[Chico](agreeWithConcepts: 1)"
           }
         }
       }
