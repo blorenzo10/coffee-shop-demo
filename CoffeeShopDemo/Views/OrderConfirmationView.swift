@@ -28,18 +28,21 @@ struct OrderConfirmationView: View {
                         item.item.thumbnail
                             .resizable()
                             .aspectRatio(contentMode: .fill)
-                            .frame(width: 120, height: 120)
+                            .frame(width: 100, height: 100)
                             .cornerRadius(24)
-                        VStack {
-                            Text("\(item.quantity) \(item.size.description) \(item.item.name)")
+                        Spacer()
+                        VStack(alignment: .center) {
+                            Text("\(item.quantity) \(item.size.description.lowercased()) \(item.item.name.lowercased())")
                                 .font(.system(size: 18, weight: .semibold))
+                                .multilineTextAlignment(.center)
                             Text("\(item.item.sizeDescriptions?[item.size] ?? "")")
+                                .foregroundStyle(Color.gray)
                         }
                         Spacer()
                         Divider()
                             .frame(height: 100)
                         Text("$\(String(format: "%.1f", item.price))")
-                            .font(.system(size: 24, weight: .bold))
+                            .font(.system(size: 18, weight: .bold))
                             .padding(.trailing, 16)
                         
                     }
