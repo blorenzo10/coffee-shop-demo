@@ -1,0 +1,153 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "%@" : {
+
+    },
+    "%lld %@ %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$lld %2$@ %3$@"
+          }
+        }
+      }
+    },
+    "$%@" : {
+
+    },
+    "Add %lld %@ %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Add %1$lld %2$@ %3$@"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Agregar %1$lld %2$@ %3$@"
+          }
+        }
+      }
+    },
+    "Cantidad" : {
+
+    },
+    "Chocolate Croissant" : {
+
+    },
+    "Croissant" : {
+
+    },
+    "Drinks" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bebidas"
+          }
+        }
+      }
+    },
+    "Ham & Cheese Croissant" : {
+
+    },
+    "Key" : {
+      "extractionState" : "manual"
+    },
+    "Large" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Grande"
+          }
+        }
+      }
+    },
+    "Muffin" : {
+
+    },
+    "My Order" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mi Orden"
+          }
+        }
+      }
+    },
+    "Order" : {
+
+    },
+    "Place Order" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Confirmar Orden"
+          }
+        }
+      }
+    },
+    "Regular" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mediano"
+          }
+        }
+      }
+    },
+    "Size" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tamaño"
+          }
+        }
+      }
+    },
+    "Small" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chico"
+          }
+        }
+      }
+    },
+    "Taxes" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impuestos"
+          }
+        }
+      }
+    },
+    "Total" : {
+
+    },
+    "View my order & checkout" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ver mi orden & Confirmar"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}
