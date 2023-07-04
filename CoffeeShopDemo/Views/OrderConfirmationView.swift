@@ -11,6 +11,8 @@ struct OrderConfirmationView: View {
     
     /// Private properties
     private var order: Order
+    /// State properties
+    @State private var showingAlert = false
     /// Binding properties
     @Binding var navPath: NavigationPath
     
@@ -21,7 +23,6 @@ struct OrderConfirmationView: View {
     
     var body: some View {
         VStack(alignment: .leading) {
-            
             ScrollView {
                 ForEach(order.items, id: \.id) { item in
                     HStack {
@@ -32,7 +33,7 @@ struct OrderConfirmationView: View {
                             .cornerRadius(24)
                         Spacer()
                         VStack(alignment: .center) {
-                            Text("\(item.quantity) \(item.size.description.lowercased()) \(item.item.name.lowercased())")
+                            Text("\(item.quantity) \(item.size.localizeDescription(describing: item.item)) \(item.item.name.lowercased())")
                                 .font(.system(size: 18, weight: .semibold))
                                 .multilineTextAlignment(.center)
                             Text("\(item.item.sizeDescriptions?[item.size] ?? "")")
@@ -74,18 +75,27 @@ struct OrderConfirmationView: View {
                 .padding(.init(top: 3, leading: 16, bottom: 12, trailing: 16))
                 
                 Button("Place Order") {
-                    order.clear()
-                    navPath = NavigationPath()
+                    showingAlert = true
                 }
-                    .frame(maxWidth: .infinity)
-                    .buttonStyle(BrownButton())
-                    .background(Color.brown)
-                    .clipShape(Capsule())
+                .frame(maxWidth: .infinity)
+                .buttonStyle(BrownButton())
+                .background(Color.brown)
+                .clipShape(Capsule())
                 
                 Spacer()
             }
         }
         .padding(16)
+        .alert(isPresented: $showingAlert) {
+            Alert(
+                title: Text("Your order is confirmed!"),
+                message: Text("Please wait in table nro 8"),
+                dismissButton: .default(Text("Ok"), action: {
+                    order.clear()
+                    navPath = NavigationPath()
+                })
+            )
+        }
     }
 }
 
@@ -93,10 +103,10 @@ struct OrderConfirmationView: View {
     OrderConfirmationView(
         Order(
             items: [
-                .init(item: Coffee.latte, size: .regular, quantity: 2),
-                .init(item: Coffee.cappuccino, size: .large, quantity: 1),
-                .init(item: Coffee.mocha, size: .small, quantity: 1),
-                .init(item: Food.chocolateCroissant, size: .regular, quantity: 2),
+                .init(item: AnyMenuItem(Coffee.latte), size: .regular, quantity: 2),
+                .init(item: AnyMenuItem(Coffee.cappuccino), size: .large, quantity: 1),
+                .init(item: AnyMenuItem(Coffee.mocha), size: .small, quantity: 1),
+                .init(item: AnyMenuItem(Food.chickenSandwich), size: .regular, quantity: 2),
             ]
         ), .constant(NavigationPath())
     )

@@ -23,11 +23,25 @@ enum MenuItemSize: CaseIterable, Hashable {
             return String(localized: "Large")
         }
     }
+    
+    func localizeDescription(describing menuItem: AnyMenuItem) -> AttributedString {
+        var options = AttributedString.LocalizationOptions()
+        options.concepts = [.localizedPhrase(menuItem.name)]
+        switch self {
+        case .small:
+            return AttributedString(localized: "Small", options: options)
+        case .regular:
+            return AttributedString(localized: "Regular", options: options)
+        case .large:
+            return AttributedString(localized: "Large", options: options)
+        }
+    }
 }
 
 protocol MenuItemInfo: Identifiable {
     typealias Price = [MenuItemSize: Float]
     var name: String { get }
+    var localizeDescription: AttributedString? { get }
     var thumbnail: Image { get }
     var icon: Image { get }
     var availableSizes: [MenuItemSize] { get }
@@ -41,6 +55,7 @@ extension MenuItemInfo {
 
 struct AnyMenuItem: MenuItemInfo {
     private let _name: String
+    private let _localizeDescription: AttributedString?
     private let _thumbnail: Image
     private let _icon: Image
     private let _availableSizes: [MenuItemSize]
@@ -49,6 +64,7 @@ struct AnyMenuItem: MenuItemInfo {
     
     init<T: MenuItemInfo>(_ item: T) {
         self._name = item.name
+        self._localizeDescription = item.localizeDescription
         self._thumbnail = item.thumbnail
         self._icon = item.icon
         self._availableSizes = item.availableSizes
@@ -57,6 +73,7 @@ struct AnyMenuItem: MenuItemInfo {
     }
     
     var name: String { _name }
+    var localizeDescription: AttributedString? { _localizeDescription }
     var thumbnail: Image { _thumbnail }
     var icon: Image { _icon }
     var availableSizes: [MenuItemSize] { _availableSizes }
@@ -79,8 +96,8 @@ struct Menu {
         ]
         items[.food] = [
             Food.croissant,
-            Food.chocolateCroissant,
             Food.hamAndCheeseCroissant,
+            Food.chickenSandwich,
             Food.muffin,
         ]
     }

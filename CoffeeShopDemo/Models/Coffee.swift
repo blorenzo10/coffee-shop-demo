@@ -28,6 +28,10 @@ enum Coffee: MenuItemInfo {
         }
     }
     
+    var localizeDescription: AttributedString? {
+        return nil
+    }
+    
     var thumbnail: Image {
         switch self {
         case .latte:

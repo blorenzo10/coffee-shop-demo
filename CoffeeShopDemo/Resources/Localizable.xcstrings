@@ -11,6 +11,12 @@
             "state" : "new",
             "value" : "%1$lld %2$@ %3$@"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "^[%1$lld %3$@ %2$@](inflect: true)"
+          }
         }
       }
     },
@@ -28,7 +34,7 @@
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Agregar %1$lld %2$@ %3$@"
+            "value" : "Agregar ^[%1$lld %3$@ %2$@](inflect: true)"
           }
         }
       }
@@ -36,7 +42,11 @@
     "Cantidad" : {
 
     },
+    "Chicken Sandwich" : {
+
+    },
     "Chocolate Croissant" : {
+      "extractionState" : "stale",
       "localizations" : {
         "es" : {
           "stringUnit" : {
@@ -82,10 +92,16 @@
     },
     "Large" : {
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Large"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Grande"
+            "value" : "grande"
           }
         }
       }
@@ -110,8 +126,21 @@
         }
       }
     },
+    "Ok" : {
+
+    },
     "Order" : {
 
+    },
+    "Our %@ is freshly baked" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "^[Nuestro %@](inflect: true) es ^[hecho](agreeWithArgument: 1) en el día"
+          }
+        }
+      }
     },
     "Place Order" : {
       "localizations" : {
@@ -123,12 +152,21 @@
         }
       }
     },
+    "Please wait in table nro 8" : {
+
+    },
     "Regular" : {
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Regular"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Mediano"
+            "value" : "^[mediano](agreeWithConcept: 1)"
           }
         }
       }
@@ -145,10 +183,16 @@
     },
     "Small" : {
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Small"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "^[Chico](agreeWithConcepts: 1)"
+            "value" : "^[chico](agreeWithConcept: 1)"
           }
         }
       }
@@ -175,6 +219,9 @@
           }
         }
       }
+    },
+    "Your order is confirmed!" : {
+
     }
   },
   "version" : "1.0"

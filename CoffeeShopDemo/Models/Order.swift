@@ -10,7 +10,7 @@ import Foundation
 struct OrderItem: Hashable {
     
     let id = UUID()
-    let item: any MenuItemInfo
+    let item: AnyMenuItem
     let size: MenuItemSize
     let quantity: Int
     

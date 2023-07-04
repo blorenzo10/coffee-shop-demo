@@ -11,6 +11,11 @@ struct MenuDetailsView: View {
     
     // Private properties
     let item: AnyMenuItem
+    private var localizeOptions: AttributedString.LocalizationOptions {
+        var options = AttributedString.LocalizationOptions()
+        options.concepts = [.localizedPhrase(item.name)]
+        return options
+    }
     /// Environment properties
     @Environment(\.dismiss) var dismiss
     /// State properties
@@ -38,6 +43,18 @@ struct MenuDetailsView: View {
                 Text("$\(String(format: "%.1f", finalPrice))")
                     .font(.system(size: 24, weight: .semibold))
             }
+            if item.localizeDescription != nil {
+                RoundedRectangle(cornerRadius: 12)
+                    .fill(.brown.opacity(0.2))
+                    .overlay {
+                        Text("\(item.localizeDescription!) 🤩🥖🥐")
+                            .multilineTextAlignment(.center)
+                            .padding(5)
+                            .font(.system(size: 12, weight: .semibold))
+                    }
+                    .frame(height: 40)
+                    .padding(.init(top: 0, leading: 5, bottom: 0, trailing: 5))
+            }
             Text("Size")
                 .font(.system(size: 24, weight: .bold))
                 .padding(.top, 16)
@@ -53,7 +70,7 @@ struct MenuDetailsView: View {
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
                                     .frame(width: getWidth(forSize: size))
-                                Text(size.description)
+                                Text(size.localizeDescription(describing: item))
                                     .font(.system(size: 16, weight: selectedSize == size ? .bold : .regular))
                                 Text(item.sizeDescriptions?[size] ?? "")
                                     .font(.system(size: 12))
@@ -79,7 +96,7 @@ struct MenuDetailsView: View {
                 Spacer()
             }
 
-            Button("Add \(quantity) \(selectedSize.description) \(item.name.lowercased())") {
+            Button("Add \(quantity) \(selectedSize.localizeDescription(describing: item)) \(item.name.lowercased())") {
                 order.add(item: .init(item: item, size: selectedSize, quantity: quantity))
                 dismiss()
             }
@@ -99,6 +116,7 @@ struct MenuDetailsView: View {
             finalPrice = item.price[selectedSize]! * Float(new)
         }
         .onAppear {
+            selectedSize = item.availableSizes.first!
             finalPrice = item.price[selectedSize]!
         }
     }
@@ -116,11 +134,12 @@ private extension MenuDetailsView {
             return 90
         }
     }
+    
 }
 
 #Preview {
     MenuDetailsView(
-        item: AnyMenuItem(Food.croissant),
+        item: AnyMenuItem(Food.chickenSandwich),
         order: .constant(Order())
     )
 }
