@@ -27,13 +27,13 @@
       "localizations" : {
         "en" : {
           "stringUnit" : {
-            "state" : "new",
-            "value" : "Add %1$lld %2$@ %3$@"
+            "state" : "translated",
+            "value" : "Add ^[%1$lld %2$@ %3$@](inflect: true)"
           }
         },
         "es" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "needs_review",
             "value" : "Agregar ^[%1$lld %3$@ %2$@](inflect: true)"
           }
         }

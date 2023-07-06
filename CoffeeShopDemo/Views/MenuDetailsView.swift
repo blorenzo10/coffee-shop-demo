@@ -139,7 +139,7 @@ private extension MenuDetailsView {
 
 #Preview {
     MenuDetailsView(
-        item: AnyMenuItem(Food.chickenSandwich),
+        item: AnyMenuItem(Coffee.latte),
         order: .constant(Order())
     )
 }
