@@ -4,6 +4,9 @@
     "%@" : {
 
     },
+    "%@ 🤩🥖🥐" : {
+
+    },
     "%lld %@ %@" : {
       "localizations" : {
         "en" : {
@@ -42,6 +45,9 @@
     "Cantidad" : {
 
     },
+    "Cappuccino" : {
+
+    },
     "Chicken Sandwich" : {
 
     },
@@ -52,6 +58,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Media luna de chocolate"
+          }
+        }
+      }
+    },
+    "Coffee" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Café"
           }
         }
       }
@@ -73,6 +89,19 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bebidas"
+          }
+        }
+      }
+    },
+    "Flat White" : {
+
+    },
+    "Food" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Comida"
           }
         }
       }
@@ -102,6 +131,19 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "grande"
+          }
+        }
+      }
+    },
+    "Latte" : {
+
+    },
+    "Mocha" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Café Mocha"
           }
         }
       }

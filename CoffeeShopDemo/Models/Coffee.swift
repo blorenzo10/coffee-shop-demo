@@ -18,13 +18,13 @@ enum Coffee: MenuItemInfo {
     var name: String {
         switch self {
         case .latte:
-            return "Latte"
+            return String(localized: "Latte")
         case .cappuccino:
-            return "Cappuccino"
+            return String(localized: "Cappuccino")
         case .mocha:
-            return "Mocha"
+            return String(localized: "Mocha")
         case .flatwhite:
-            return "Flat White"
+            return String(localized: "Flat White")
         }
     }
     

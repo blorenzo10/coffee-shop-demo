@@ -115,9 +115,9 @@ extension Menu {
         var name: String {
             switch self {
             case .coffee:
-                return "Coffee"
+                return String(localized: "Coffee")
             case .food:
-                return "Food"
+                return String(localized: "Food")
             }
         }
     }
