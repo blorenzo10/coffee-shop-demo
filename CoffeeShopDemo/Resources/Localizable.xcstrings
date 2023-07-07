@@ -49,7 +49,14 @@
 
     },
     "Chicken Sandwich" : {
-
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sandwich de pollo"
+          }
+        }
+      }
     },
     "Chocolate Croissant" : {
       "extractionState" : "stale",
