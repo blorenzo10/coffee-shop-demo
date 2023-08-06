@@ -91,8 +91,10 @@ struct OrderConfirmationView: View {
                 title: Text("Your order is confirmed!"),
                 message: Text("Please wait in table nro 8"),
                 dismissButton: .default(Text("Ok"), action: {
+                    LiveActivityManager.shared.simulate()
                     order.clear()
                     navPath = NavigationPath()
+                    
                 })
             )
         }

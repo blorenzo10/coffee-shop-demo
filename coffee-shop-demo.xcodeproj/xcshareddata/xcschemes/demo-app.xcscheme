@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "BC6C77312A48DAE80012E96F"
-               BuildableName = "coffee-shop-demo.app"
-               BlueprintName = "coffee-shop-demo"
+               BuildableName = "Coffee Shop App.app"
+               BlueprintName = "Coffee Shop App"
                ReferencedContainer = "container:coffee-shop-demo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -33,7 +33,7 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = "es"
+      language = "en"
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
@@ -45,8 +45,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "BC6C77312A48DAE80012E96F"
-            BuildableName = "coffee-shop-demo.app"
-            BlueprintName = "coffee-shop-demo"
+            BuildableName = "Coffee Shop App.app"
+            BlueprintName = "Coffee Shop App"
             ReferencedContainer = "container:coffee-shop-demo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -62,8 +62,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "BC6C77312A48DAE80012E96F"
-            BuildableName = "coffee-shop-demo.app"
-            BlueprintName = "coffee-shop-demo"
+            BuildableName = "Coffee Shop App.app"
+            BlueprintName = "Coffee Shop App"
             ReferencedContainer = "container:coffee-shop-demo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

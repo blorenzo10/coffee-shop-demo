@@ -23,6 +23,17 @@ struct HomeView: View {
     
     var body: some View {
         NavigationStack(path: $navPath) {
+//            HStack {
+//                Text("Coffe Shop")
+//                    .font(.system(size: 32, weight: .bold))
+//                Spacer()
+//                Image(systemName: "cup.and.saucer.fill")
+//                    .resizable()
+//                    .aspectRatio(contentMode: .fill)
+//                    .frame(width: 25, height: 25)
+//            } sistem
+//            .padding(.init(top: 0, leading: 16, bottom: 0, trailing: 16))
+            
             ScrollView {
                 ForEach(Menu.Section.allCases, id: \.self) { menuSection in
                     LazyVGrid(columns: columns, pinnedViews: [.sectionHeaders]) {
