@@ -102,9 +102,11 @@ struct Menu {
         ]
     }
     
-    func getItems(for section: Section) -> [any MenuItemInfo] {
+    func getMenuItems(for section: Section) -> [any MenuItemInfo] {
         return items[section] ?? []
     }
+    
+    func addItem(to section: Section) {}
 }
 
 extension Menu {
