@@ -51,6 +51,7 @@ final class LiveActivityManager {
                 ActivityContent(state: OrderAttributes.ContentState.init(status: .ready, currentOrder: 8), staleDate: nil),
                 dismissalPolicy: .default
             )
+            orderActivity = nil
         }
     }
     
