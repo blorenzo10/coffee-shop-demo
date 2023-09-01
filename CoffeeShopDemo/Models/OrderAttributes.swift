@@ -32,6 +32,12 @@ struct OrderAttributes: ActivityAttributes {
         }
         
         let status: OrderStatus
+        var currentOrder: Int
+        
+        init(status: OrderStatus = .inQueue, currentOrder: Int = 0) {
+            self.status = status
+            self.currentOrder = currentOrder
+        }
     }
     
     let orderNumber: Int

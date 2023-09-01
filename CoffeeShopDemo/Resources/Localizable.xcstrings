@@ -1,6 +1,9 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "" : {
+
+    },
     "%@" : {
 
     },
@@ -64,7 +67,7 @@
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Media luna de chocolate"
+            "value" : "Medialuna de chocolate"
           }
         }
       }
@@ -79,12 +82,15 @@
         }
       }
     },
+    "Cortado" : {
+
+    },
     "Croissant" : {
       "localizations" : {
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Media luna"
+            "value" : "Medialuna"
           }
         }
       }
@@ -118,7 +124,7 @@
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Media luna jyc"
+            "value" : "Medialuna jyc"
           }
         }
       }
@@ -146,11 +152,12 @@
 
     },
     "Mocha" : {
+      "extractionState" : "stale",
       "localizations" : {
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Café Mocha"
+            "value" : "Mocha"
           }
         }
       }
@@ -181,6 +188,9 @@
     "Order" : {
 
     },
+    "Order number 8" : {
+
+    },
     "Our %@ is freshly baked" : {
       "localizations" : {
         "es" : {
@@ -200,9 +210,6 @@
           }
         }
       }
-    },
-    "Please wait in table nro 8" : {
-
     },
     "Regular" : {
       "localizations" : {

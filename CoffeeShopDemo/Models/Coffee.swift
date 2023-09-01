@@ -1,6 +1,6 @@
 //
 //  MenuItem.swift
-//  automatic-grammar-agreement-demo
+//  coffee-shop-demo
 //
 //  Created by Bruno Lorenzo on 25/6/23.
 //
@@ -12,7 +12,7 @@ enum Coffee: MenuItemInfo {
     
     case latte
     case cappuccino
-    case mocha
+    case cortado
     case flatwhite
     
     var name: String {
@@ -21,8 +21,8 @@ enum Coffee: MenuItemInfo {
             return String(localized: "Latte")
         case .cappuccino:
             return String(localized: "Cappuccino")
-        case .mocha:
-            return String(localized: "Mocha")
+        case .cortado:
+            return String(localized: "Cortado")
         case .flatwhite:
             return String(localized: "Flat White")
         }
@@ -38,8 +38,8 @@ enum Coffee: MenuItemInfo {
             return Image("latte")
         case .cappuccino:
             return Image("cappuccino")
-        case .mocha:
-            return Image("mocha")
+        case .cortado:
+            return Image("cortado")
         case .flatwhite:
             return Image("flatwhite")
         }
@@ -72,7 +72,7 @@ enum Coffee: MenuItemInfo {
             prices[.small] = 4.0
             prices[.regular] = 4.5
             prices[.large] = 6
-        case .mocha:
+        case .cortado:
             prices[.small] = 4
             prices[.regular] = 5
             prices[.large] = 5.5

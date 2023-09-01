@@ -1,6 +1,6 @@
 //
 //  automatic_grammar_agreement_demoApp.swift
-//  automatic-grammar-agreement-demo
+//  coffee-shop-demo
 //
 //  Created by Bruno Lorenzo on 25/6/23.
 //

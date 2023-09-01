@@ -1,6 +1,6 @@
 //
 //  OrderConfirmationView.swift
-//  automatic-grammar-agreement-demo
+//  coffee-shop-demo
 //
 //  Created by Bruno Lorenzo on 26/6/23.
 //
@@ -89,12 +89,11 @@ struct OrderConfirmationView: View {
         .alert(isPresented: $showingAlert) {
             Alert(
                 title: Text("Your order is confirmed!"),
-                message: Text("Please wait in table nro 8"),
+                message: Text("Order number 8"),
                 dismissButton: .default(Text("Ok"), action: {
                     LiveActivityManager.shared.simulate()
                     order.clear()
                     navPath = NavigationPath()
-                    
                 })
             )
         }
@@ -107,7 +106,7 @@ struct OrderConfirmationView: View {
             items: [
                 .init(item: AnyMenuItem(Coffee.latte), size: .regular, quantity: 2),
                 .init(item: AnyMenuItem(Coffee.cappuccino), size: .large, quantity: 1),
-                .init(item: AnyMenuItem(Coffee.mocha), size: .small, quantity: 1),
+                .init(item: AnyMenuItem(Coffee.cortado), size: .small, quantity: 1),
                 .init(item: AnyMenuItem(Food.chickenSandwich), size: .regular, quantity: 2),
             ]
         ), .constant(NavigationPath())

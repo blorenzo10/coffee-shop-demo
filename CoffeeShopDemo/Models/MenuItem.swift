@@ -91,7 +91,7 @@ struct Menu {
         items[.coffee] = [
             Coffee.latte,
             Coffee.cappuccino,
-            Coffee.mocha,
+            Coffee.cortado,
             Coffee.flatwhite,
         ]
         items[.food] = [

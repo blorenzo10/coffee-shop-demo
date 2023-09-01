@@ -1,6 +1,6 @@
 //
 //  Cart.swift
-//  automatic-grammar-agreement-demo
+//  coffee-shop-demo
 //
 //  Created by Bruno Lorenzo on 26/6/23.
 //

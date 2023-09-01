@@ -11,6 +11,9 @@ import SwiftUI
 
 struct CoffeeShopWidgetLiveActivity: Widget {
     
+    @State var timeRemaining = 10
+    let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
+    
     var body: some WidgetConfiguration {
         ActivityConfiguration(for: OrderAttributes.self) { context in
             // Lock screen/banner UI goes here
@@ -18,29 +21,36 @@ struct CoffeeShopWidgetLiveActivity: Widget {
 
         } dynamicIsland: { context in
             DynamicIsland {
-                // Expanded UI goes here.  Compose the expanded UI through
-                // various regions, like leading/trailing/center/bottom
-                DynamicIslandExpandedRegion(.leading) {
-                    Text("Leading")
-                }
-                DynamicIslandExpandedRegion(.trailing) {
-                    Text("Trailing")
-                }
                 DynamicIslandExpandedRegion(.bottom) {
-                    Text("Bottom \(context.state.status.description)")
-                    // more content
+                    VStack {
+                        HStack {
+                            Image(systemName: "cup.and.saucer")
+                            ProgressView(value: context.state.status.rawValue, total: 3)
+                                .tint(.brown)
+                                .background(Color.white)
+                            Image(systemName: context.state.status == .ready ? "checkmark.circle.fill" : "cup.and.saucer.fill")
+                                .contentTransition(.symbolEffect(.replace))
+                        }
+                        .padding(.horizontal, 16)
+                        
+                        Text("\(context.state.status.description)")
+                            .font(.system(size: 18, weight: .semibold))
+                            .padding(.bottom)
+                    }
                 }
             } compactLeading: {
-                Text("L")
+                Text("Order: \(context.state.currentOrder)")
             } compactTrailing: {
-                Text("T \(context.state.status.description)")
+                Image(systemName: context.state.status == .ready ? "checkmark.circle.fill" : "cup.and.saucer")
+                    .contentTransition(.symbolEffect(.replace))
             } minimal: {
-                Text(context.state.status.description)
+                Image(systemName: context.state.status == .making ? "checkmark.circle.fill" : "cup.and.saucer")
+                    .contentTransition(.symbolEffect(.replace))
             }
-            .widgetURL(URL(string: "http://www.apple.com"))
-            .keylineTint(Color.red)
+            .keylineTint(Color.blue)
         }
     }
+
 }
 
 struct LiveActivityView: View {
