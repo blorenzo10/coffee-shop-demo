@@ -6,6 +6,7 @@ It's meant to be a complement to my Medium articles.
 # Roadmap
 Below is the list of future features I've planned to add to the project
 - [ ] TipKit
+- [ ] Interactive Widgets
 - [ ] MapKit
 
 # What's included?
