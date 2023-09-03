@@ -16,7 +16,7 @@ Please Note that this is a live project.
 - Article: [How to use Automatic Grammar Agreement in Swift](https://medium.com/@blorenzop/learn-how-to-unleash-the-power-of-automatic-grammar-agreement-in-swift-42f1c9178942)
 - Demo 👇
 
-https://github.com/blorenzo10/coffee-shop-demo/assets/20937316/47808a0d-1c69-4a8a-b468-4b26766bcb5a
+https://github.com/blorenzo10/coffee-shop-demo/assets/20937316/baafcab5-4a9f-4cf7-b9d5-d47667a02e9a
 
 
 ## Type Erasure
@@ -26,14 +26,18 @@ https://github.com/blorenzo10/coffee-shop-demo/assets/20937316/47808a0d-1c69-4a8
 - Article: [Add Live Activities to your iOS app in 4 steps](https://medium.com/@blorenzop/live-activities-swift-6e95ee15863e)
 - Demo 👇
 
-https://github.com/blorenzo10/coffee-shop-demo/assets/20937316/9515caf2-3436-46bb-812f-8cf098b20d8b
+https://github.com/blorenzo10/coffee-shop-demo/assets/20937316/0ac86623-37de-4c62-834b-e26957b90711
+
+
+
 
 
 ## Dynamic Island
 - Article: Comming soon
 - Demo 👇
 
-https://github.com/blorenzo10/coffee-shop-demo/assets/20937316/065f412c-8de0-451e-ae60-2062ee24ef29
+https://github.com/blorenzo10/coffee-shop-demo/assets/20937316/6a890fb8-a5ee-42b8-b06b-79dfb6f3b502
+
 
 
 # Requests
