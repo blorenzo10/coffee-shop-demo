@@ -11,14 +11,9 @@ import SwiftUI
 
 struct CoffeeShopWidgetLiveActivity: Widget {
     
-    @State var timeRemaining = 10
-    let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
-    
     var body: some WidgetConfiguration {
         ActivityConfiguration(for: OrderAttributes.self) { context in
-            // Lock screen/banner UI goes here
             LiveActivityView(state: context.state)
-
         } dynamicIsland: { context in
             DynamicIsland {
                 DynamicIslandExpandedRegion(.bottom) {
@@ -44,7 +39,7 @@ struct CoffeeShopWidgetLiveActivity: Widget {
                 Image(systemName: context.state.status == .ready ? "checkmark.circle.fill" : "cup.and.saucer")
                     .contentTransition(.symbolEffect(.replace))
             } minimal: {
-                Image(systemName: context.state.status == .making ? "checkmark.circle.fill" : "cup.and.saucer")
+                Image(systemName: context.state.status == .ready ? "checkmark.circle.fill" : "cup.and.saucer")
                     .contentTransition(.symbolEffect(.replace))
             }
             .keylineTint(Color.blue)

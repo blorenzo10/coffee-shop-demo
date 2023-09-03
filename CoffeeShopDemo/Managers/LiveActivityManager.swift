@@ -15,24 +15,14 @@ final class LiveActivityManager {
     static let shared = LiveActivityManager()
     
     private init() {
-        orderAttributes = OrderAttributes(orderNumber: 1)
-        
-        let initialState = OrderAttributes.ContentState(status: .inQueue)
-        let content = ActivityContent(state: initialState, staleDate: nil, relevanceScore: 1.0)
-
-        do {
-            orderActivity = try Activity.request(
-                attributes: orderAttributes,
-                content: content,
-                pushType: nil
-            )
-        } catch {
-            print(error.localizedDescription)
-        }
+        orderAttributes = OrderAttributes(orderNumber: 8)
+        setupActivity()
     }
     
     func simulate() {
+        setupActivity()
         Task {
+            try await Task.sleep(nanoseconds: 1_000_000_000)
             await updateActivity(to: .init(currentOrder: 5))
             try await Task.sleep(nanoseconds: 1_000_000_000)
             await updateActivity(to: .init(currentOrder: 6))
@@ -55,7 +45,31 @@ final class LiveActivityManager {
         }
     }
     
-    private func updateActivity(to state: OrderAttributes.ContentState) async {
+    
+}
+
+// MARK: - Helpers
+private extension LiveActivityManager {
+    func setupActivity() {
+        if orderActivity != nil {
+            return
+        }
+        
+        let initialState = OrderAttributes.ContentState(status: .inQueue)
+        let content = ActivityContent(state: initialState, staleDate: nil, relevanceScore: 1.0)
+
+        do {
+            orderActivity = try Activity.request(
+                attributes: orderAttributes,
+                content: content,
+                pushType: nil
+            )
+        } catch {
+            print(error.localizedDescription)
+        }
+    }
+    
+    func updateActivity(to state: OrderAttributes.ContentState) async {
         var alert: AlertConfiguration?
         if state.status == .ready {
             alert = AlertConfiguration(
@@ -73,4 +87,3 @@ final class LiveActivityManager {
         )
     }
 }
-
