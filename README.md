@@ -3,6 +3,11 @@ This project serves as a support to test different features and characteristics 
 
 It's meant to be a complement to my Medium articles.
 
+# Roadmap
+Below is the list of future features I've planned to add to the project
+- [ ] TipKit
+- [ ] MapKit
+
 # What's included?
 Please Note that this is a live project.
 
@@ -26,7 +31,6 @@ https://github.com/blorenzo10/coffee-shop-demo/assets/20937316/9515caf2-3436-46b
 ## Dynamic Island
 - Article: Comming soon
 - Demo 👇
-
 
 https://github.com/blorenzo10/coffee-shop-demo/assets/20937316/065f412c-8de0-451e-ae60-2062ee24ef29
 
