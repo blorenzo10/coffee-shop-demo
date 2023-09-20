@@ -33,7 +33,7 @@ https://github.com/blorenzo10/coffee-shop-demo/assets/20937316/0ac86623-37de-4c6
 
 
 ## Dynamic Island
-- Article: Comming soon
+- Article: [How to use Dynamic Island in SwiftUI](https://medium.com/@blorenzop/how-to-use-dynamic-island-in-swiftui-4eaa66c7c301)
 - Demo 👇
 
 https://github.com/blorenzo10/coffee-shop-demo/assets/20937316/6a890fb8-a5ee-42b8-b06b-79dfb6f3b502
