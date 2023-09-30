@@ -8,17 +8,15 @@
 import SwiftUI
 
 struct OrderConfirmationView: View {
-    
-    /// Private properties
-    private var order: Order
+    /// Environment properties
+    @EnvironmentObject var router: Router
     /// State properties
     @State private var showingAlert = false
-    /// Binding properties
-    @Binding var navPath: NavigationPath
+    /// View's properties
+    private var order: Order
     
-    init(_ order: Order, _ navPath: Binding<NavigationPath>) {
+    init(_ order: Order) {
         self.order = order
-        self._navPath = navPath
     }
     
     var body: some View {
@@ -76,12 +74,18 @@ struct OrderConfirmationView: View {
                 
                 Button("Place Order") {
                     showingAlert = true
+                    OrdersManager.shared.add(order)
                 }
                 .frame(maxWidth: .infinity)
                 .buttonStyle(BrownButton())
                 .background(Color.brown)
                 .clipShape(Capsule())
                 
+                Button("Cancel") {
+                    NotificationCenter.default.post(name: .clearOrder, object: nil)
+                    router.popToPrevious()
+                }
+                .padding(.top, 16)
                 Spacer()
             }
         }
@@ -91,11 +95,24 @@ struct OrderConfirmationView: View {
                 title: Text("Your order is confirmed!"),
                 message: Text("Order number 8"),
                 dismissButton: .default(Text("Ok"), action: {
-                    LiveActivityManager.shared.simulate()
-                    order.clear()
-                    navPath = NavigationPath()
+//                    LiveActivityManager.shared.simulate()
+                    NotificationCenter.default.post(name: .clearOrder, object: nil)
+                    Task { await HistoryTip.orderPlaced.donate() }
+                    router.popToPrevious()
                 })
             )
+        }
+        .toolbar {
+            ToolbarItem(placement: .navigationBarLeading) {
+                Button {
+                    router.popToPrevious()
+                } label: {
+                    HStack {
+                        Image(systemName: "chevron.backward")
+                        Text("Home")
+                    }
+                }
+            }
         }
     }
 }
@@ -109,6 +126,6 @@ struct OrderConfirmationView: View {
                 .init(item: AnyMenuItem(Coffee.cortado), size: .small, quantity: 1),
                 .init(item: AnyMenuItem(Food.chickenSandwich), size: .regular, quantity: 2),
             ]
-        ), .constant(NavigationPath())
+        )
     )
 }

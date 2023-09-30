@@ -6,14 +6,21 @@
 //
 
 import SwiftUI
+import TipKit
 
 @main
 struct CoffeeShopDemoApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     
+    init() {
+        try? Tips.resetDatastore()
+        try? Tips.configure([
+            .displayFrequency(.immediate)
+        ])
+    }
     var body: some Scene {
         WindowGroup {
-            HomeView()
+            ContainerView()
         }
     }
 }

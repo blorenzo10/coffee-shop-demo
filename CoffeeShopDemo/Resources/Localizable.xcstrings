@@ -29,6 +29,9 @@
     "$%@" : {
 
     },
+    "Access your order's history!" : {
+
+    },
     "Add %lld %@ %@" : {
       "localizations" : {
         "en" : {
@@ -44,6 +47,9 @@
           }
         }
       }
+    },
+    "Cancel" : {
+
     },
     "Cantidad" : {
 
@@ -129,6 +135,12 @@
         }
       }
     },
+    "History" : {
+
+    },
+    "Home" : {
+
+    },
     "Key" : {
       "extractionState" : "manual"
     },
@@ -149,6 +161,9 @@
       }
     },
     "Latte" : {
+
+    },
+    "Menu" : {
 
     },
     "Mocha" : {
@@ -275,6 +290,12 @@
           }
         }
       }
+    },
+    "You can quickly repeat any order you want" : {
+
+    },
+    "You didn't make any orders yet =)" : {
+
     },
     "Your order is confirmed!" : {
 

@@ -85,7 +85,11 @@ struct AnyMenuItem: MenuItemInfo {
 struct Menu {
     
     var items: [Section: [any MenuItemInfo]]
-    
+    var allItems: [any MenuItemInfo] {
+        let coffee = getItems(for: .coffee)
+        let food = getItems(for: .food)
+        return coffee + food
+    }
     init() {
         items = [Section: [any MenuItemInfo]]()
         items[.coffee] = [

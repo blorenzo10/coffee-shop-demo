@@ -30,6 +30,7 @@ struct OrderItem: Hashable {
 class Order {
     
     var id = UUID()
+    let date = Date.now
     var items: [OrderItem]
     
     init(items: [OrderItem]) {
