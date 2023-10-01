@@ -5,12 +5,19 @@ It's meant to be a complement to my Medium articles.
 
 # Roadmap
 Below is the list of future features I've planned to add to the project
-- [ ] TipKit
+- [x] TipKit
 - [ ] Interactive Widgets
 - [ ] MapKit
 
 # What's included?
 Please Note that this is a live project.
+
+## TipKit
+- Article: Cooming soon 🤓
+- Demo 👇
+
+https://github.com/blorenzo10/coffee-shop-demo/assets/20937316/6bbbcc87-8e0a-4b01-8ef7-48be84ed9265
+
 
 ## Automatic Grammar Agreement
 - Article: [How to use Automatic Grammar Agreement in Swift](https://medium.com/@blorenzop/learn-how-to-unleash-the-power-of-automatic-grammar-agreement-in-swift-42f1c9178942)
