@@ -18,7 +18,7 @@ struct HistoryTip: Tip {
     
     
     var title: Text {
-        Text("Access your order's history!")
+        Text("Access your order history!")
     }
     
     var message: Text? {
@@ -36,7 +36,7 @@ struct HistoryTip: Tip {
     var rules: [Rule] {
         [
             #Rule(Self.orderPlaced) {
-                $0.donations.count > 1
+                $0.donations.count > 0
             },
             
             #Rule(Self.$alreadyDiscovered) {
