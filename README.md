@@ -13,7 +13,7 @@ Below is the list of future features I've planned to add to the project
 Please Note that this is a live project.
 
 ## TipKit
-- Article: Cooming soon 🤓
+- Article: [How to use TipKit to highlight features in your iOS app](https://medium.com/@blorenzop/swiftui-and-tipkit-eb7d99657fc8)
 - Demo 👇
 
 https://github.com/blorenzo10/coffee-shop-demo/assets/20937316/6bbbcc87-8e0a-4b01-8ef7-48be84ed9265
