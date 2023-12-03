@@ -7,13 +7,20 @@ It's meant to be a complement to my Medium articles.
 Below is the list of future features I've planned to add to the project
 - [x] TipKit
 - [ ] Interactive Widgets
-- [ ] MapKit
+- [x] MapKit
 
 # What's included?
-Please Note that this is a live project.
+`⚠️ Please Note that this is a live project`
+
+## MapKit
+- Article: [Working with MapKit in SwiftUI](https://medium.com/@blorenzop/mapkit-swiftui-009a0eb1695c)
+- Demo 👇
+
+https://github.com/blorenzo10/coffee-shop-demo/assets/20937316/48e9745b-068d-4427-a941-59cd16ae83bc
+
 
 ## TipKit
-- Article: Cooming soon 🤓
+- Article: [How to use TipKit to highlight features in your iOS app](https://medium.com/@blorenzop/swiftui-and-tipkit-eb7d99657fc8)
 - Demo 👇
 
 https://github.com/blorenzo10/coffee-shop-demo/assets/20937316/6bbbcc87-8e0a-4b01-8ef7-48be84ed9265
