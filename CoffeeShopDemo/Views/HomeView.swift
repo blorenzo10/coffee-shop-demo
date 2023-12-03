@@ -13,6 +13,7 @@ struct HomeView: View {
     @EnvironmentObject var router: Router
     /// State properties
     @State private var showingCoffeeDetails = false
+    @State private var showingMap = false
     @State private var selectedItem: AnyMenuItem? = nil
     @State private var orderPrice: Float = 0.0
     @State private var order = Order()
@@ -26,6 +27,14 @@ struct HomeView: View {
             Text("Menu")
                 .font(.largeTitle)
             Spacer()
+            Button {
+                router.routeTo(.map)
+            } label: {
+                Image(systemName: "map.circle")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 25, height: 25)
+            }
             Button {
                 router.routeTo(.history)
             } label : {
@@ -84,6 +93,10 @@ struct HomeView: View {
                 .presentationDragIndicator(.visible)
                 .presentationCornerRadius(24)
         })
+//        .sheet(isPresented: $showingMap, content: {
+//            MapContainerView()
+//                .presentationDetents([.medium])
+//        })
         .onReceive(NotificationCenter.default.publisher(for: .clearOrder)) { _ in
             order = Order()
         }

@@ -27,6 +27,11 @@ struct ContainerView: View {
                             .navigationTitle("History")
                             .navigationBarTitleDisplayMode(.large)
                             .navigationBarBackButtonHidden()
+                        
+                    case .map:
+                        MapContainerView()
+                            .navigationTitle("")
+                            .navigationBarBackButtonHidden()
                     }
                 }
         }

@@ -7,7 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC1F6C8F2B0449AF00B05B2C /* MapContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1F6C8E2B0449AF00B05B2C /* MapContainerView.swift */; };
+		BC1F6C912B044B7300B05B2C /* CLLocationCoordinate2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1F6C902B044B7300B05B2C /* CLLocationCoordinate2D.swift */; };
 		BC3502602ABB8448001D0D95 /* OrderHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC35025F2ABB8448001D0D95 /* OrderHistoryView.swift */; };
+		BC46CB8C2B053C97002E4544 /* MKCoordinateRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC46CB8B2B053C97002E4544 /* MKCoordinateRegion.swift */; };
+		BC6FEBC52B099475002AAC3C /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6FEBC42B099475002AAC3C /* CircleButton.swift */; };
+		BC6FEBC72B09BB1A002AAC3C /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6FEBC62B09BB1A002AAC3C /* LocationModel.swift */; };
+		BC70820E2B13DFB40045D1C1 /* MapDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC70820D2B13DFB40045D1C1 /* MapDemoView.swift */; };
 		BC8E9B772AC100AD00695DC4 /* HistoryTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8E9B762AC100AD00695DC4 /* HistoryTip.swift */; };
 		BC9306692ABCF4190095317F /* OrdersManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9306682ABCF4190095317F /* OrdersManager.swift */; };
 		BC93066B2ABCF6A90095317F /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC93066A2ABCF6A90095317F /* Router.swift */; };
@@ -62,8 +68,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		BC1F6C8E2B0449AF00B05B2C /* MapContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapContainerView.swift; sourceTree = "<group>"; };
+		BC1F6C902B044B7300B05B2C /* CLLocationCoordinate2D.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLLocationCoordinate2D.swift; sourceTree = "<group>"; };
 		BC35025F2ABB8448001D0D95 /* OrderHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderHistoryView.swift; sourceTree = "<group>"; };
+		BC46CB8B2B053C97002E4544 /* MKCoordinateRegion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKCoordinateRegion.swift; sourceTree = "<group>"; };
 		BC6C77322A48DAE80012E96F /* Coffee Shop App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coffee Shop App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC6FEBC42B099475002AAC3C /* CircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
+		BC6FEBC62B09BB1A002AAC3C /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
+		BC70820D2B13DFB40045D1C1 /* MapDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapDemoView.swift; sourceTree = "<group>"; };
 		BC8E9B762AC100AD00695DC4 /* HistoryTip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTip.swift; sourceTree = "<group>"; };
 		BC9306682ABCF4190095317F /* OrdersManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersManager.swift; sourceTree = "<group>"; };
 		BC93066A2ABCF6A90095317F /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
@@ -133,6 +145,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		BC6FEBC32B09945A002AAC3C /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				BCB63BF22A4B94AA0045B17E /* CustomButton.swift */,
+				BC6FEBC42B099475002AAC3C /* CircleButton.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
 		BC8E9B752AC1009B00695DC4 /* Tips */ = {
 			isa = PBXGroup;
 			children = (
@@ -189,9 +210,11 @@
 		BCB63BF12A4B94AA0045B17E /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				BCB63BF22A4B94AA0045B17E /* CustomButton.swift */,
+				BC6FEBC32B09945A002AAC3C /* UI */,
 				BC93066A2ABCF6A90095317F /* Router.swift */,
 				BC93066C2ABCFD2B0095317F /* Notification+Utils.swift */,
+				BC1F6C902B044B7300B05B2C /* CLLocationCoordinate2D.swift */,
+				BC46CB8B2B053C97002E4544 /* MKCoordinateRegion.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -204,6 +227,7 @@
 				BCC779E32A4E4E4300F5539F /* Food.swift */,
 				BCC779E52A4E4F0300F5539F /* MenuItem.swift */,
 				BC940B202A69F33500D2C6B0 /* OrderAttributes.swift */,
+				BC6FEBC62B09BB1A002AAC3C /* LocationModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -224,6 +248,8 @@
 				BCF37BA42A5217010098F557 /* MenuDetailsView.swift */,
 				BC35025F2ABB8448001D0D95 /* OrderHistoryView.swift */,
 				BCCD01092AC0DAE700041327 /* ContainerView.swift */,
+				BC1F6C8E2B0449AF00B05B2C /* MapContainerView.swift */,
+				BC70820D2B13DFB40045D1C1 /* MapDemoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -344,17 +370,23 @@
 				BCB63C052A4B94AA0045B17E /* OrderConfirmationView.swift in Sources */,
 				BCB63BFF2A4B94AA0045B17E /* Order.swift in Sources */,
 				BC940B212A69F33500D2C6B0 /* OrderAttributes.swift in Sources */,
+				BC6FEBC72B09BB1A002AAC3C /* LocationModel.swift in Sources */,
 				BCB63BFE2A4B94AA0045B17E /* CustomButton.swift in Sources */,
 				BCB63C002A4B94AA0045B17E /* Coffee.swift in Sources */,
 				BC940B1F2A69F2DA00D2C6B0 /* LiveActivityManager.swift in Sources */,
 				BC93066D2ABCFD2B0095317F /* Notification+Utils.swift in Sources */,
 				BCF37BA52A5217010098F557 /* MenuDetailsView.swift in Sources */,
 				BC93066B2ABCF6A90095317F /* Router.swift in Sources */,
+				BC70820E2B13DFB40045D1C1 /* MapDemoView.swift in Sources */,
+				BC1F6C8F2B0449AF00B05B2C /* MapContainerView.swift in Sources */,
 				BCCD010A2AC0DAE700041327 /* ContainerView.swift in Sources */,
 				BC8E9B772AC100AD00695DC4 /* HistoryTip.swift in Sources */,
 				BC940B262A69FEBA00D2C6B0 /* AppDelegate.swift in Sources */,
+				BC1F6C912B044B7300B05B2C /* CLLocationCoordinate2D.swift in Sources */,
+				BC46CB8C2B053C97002E4544 /* MKCoordinateRegion.swift in Sources */,
 				BC9306692ABCF4190095317F /* OrdersManager.swift in Sources */,
 				BCC779E42A4E4E4300F5539F /* Food.swift in Sources */,
+				BC6FEBC52B099475002AAC3C /* CircleButton.swift in Sources */,
 				BCC779E62A4E4F0300F5539F /* MenuItem.swift in Sources */,
 				BCB63C032A4B94AA0045B17E /* HomeView.swift in Sources */,
 				BC3502602ABB8448001D0D95 /* OrderHistoryView.swift in Sources */,
@@ -511,7 +543,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CoffeeShopDemo/Preview Content\"";
-				DEVELOPMENT_TEAM = H528SH9ZL6;
+				DEVELOPMENT_TEAM = CTS5987F4Q;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = CoffeeShopDemo/Resources/Info.plist;
@@ -525,7 +557,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.blorenzo.coffee-shop";
+				PRODUCT_BUNDLE_IDENTIFIER = com.blorenzo.coffeeshop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -542,7 +574,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CoffeeShopDemo/Preview Content\"";
-				DEVELOPMENT_TEAM = H528SH9ZL6;
+				DEVELOPMENT_TEAM = CTS5987F4Q;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = CoffeeShopDemo/Resources/Info.plist;
@@ -556,7 +588,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.blorenzo.coffee-shop";
+				PRODUCT_BUNDLE_IDENTIFIER = com.blorenzo.coffeeshop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -571,7 +603,7 @@
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = H528SH9ZL6;
+				DEVELOPMENT_TEAM = CTS5987F4Q;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Coffee Shop Widget/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Coffee Shop Widget";
@@ -583,7 +615,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.blorenzo.coffee-shop.widget";
+				PRODUCT_BUNDLE_IDENTIFIER = com.blorenzo.coffeeshop.widget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -599,7 +631,7 @@
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = H528SH9ZL6;
+				DEVELOPMENT_TEAM = CTS5987F4Q;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Coffee Shop Widget/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Coffee Shop Widget";
@@ -611,7 +643,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.blorenzo.coffee-shop.widget";
+				PRODUCT_BUNDLE_IDENTIFIER = com.blorenzo.coffeeshop.widget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;

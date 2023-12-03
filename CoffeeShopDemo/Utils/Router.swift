@@ -13,6 +13,7 @@ class Router: ObservableObject {
     enum Destination: Hashable {
         case confirmation(_ order: Order)
         case history
+        case map
     }
     
     @Published var navPath = NavigationPath()

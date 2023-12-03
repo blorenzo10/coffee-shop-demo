@@ -18,6 +18,7 @@ struct CoffeeShopDemoApp: App {
             .displayFrequency(.immediate)
         ])
     }
+    
     var body: some Scene {
         WindowGroup {
             ContainerView()
