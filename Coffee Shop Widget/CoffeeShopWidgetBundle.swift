@@ -12,5 +12,6 @@ import SwiftUI
 struct CoffeeShopWidgetBundle: WidgetBundle {
     var body: some Widget {
         CoffeeShopWidgetLiveActivity()
+        CoffeeShopWidget()
     }
 }

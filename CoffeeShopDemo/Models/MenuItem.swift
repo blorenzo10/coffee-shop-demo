@@ -54,6 +54,7 @@ extension MenuItemInfo {
 }
 
 struct AnyMenuItem: MenuItemInfo {
+    private let itemType: any MenuItemInfo.Type
     private let _name: String
     private let _localizeDescription: AttributedString?
     private let _thumbnail: Image
@@ -63,6 +64,7 @@ struct AnyMenuItem: MenuItemInfo {
     private let _price: Price
     
     init<T: MenuItemInfo>(_ item: T) {
+        self.itemType = T.self
         self._name = item.name
         self._localizeDescription = item.localizeDescription
         self._thumbnail = item.thumbnail
@@ -79,6 +81,10 @@ struct AnyMenuItem: MenuItemInfo {
     var availableSizes: [MenuItemSize] { _availableSizes }
     var sizeDescriptions: [MenuItemSize: String]? { _sizeDescriptions }
     var price: Price { _price }
+    
+    func isType<T: MenuItemInfo>(_ type: T.Type) -> Bool {
+        return itemType == type
+    }
 }
 
 

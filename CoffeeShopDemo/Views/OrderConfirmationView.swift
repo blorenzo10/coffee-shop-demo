@@ -95,7 +95,6 @@ struct OrderConfirmationView: View {
                 title: Text("Your order is confirmed!"),
                 message: Text("Order number 8"),
                 dismissButton: .default(Text("Ok"), action: {
-//                    LiveActivityManager.shared.simulate()
                     NotificationCenter.default.post(name: .clearOrder, object: nil)
                     Task { await HistoryTip.orderPlaced.donate() }
                     router.popToPrevious()

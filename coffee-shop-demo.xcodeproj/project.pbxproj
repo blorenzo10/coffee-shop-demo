@@ -20,7 +20,6 @@
 		BC93066D2ABCFD2B0095317F /* Notification+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC93066C2ABCFD2B0095317F /* Notification+Utils.swift */; };
 		BC940B1F2A69F2DA00D2C6B0 /* LiveActivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC940B1E2A69F2DA00D2C6B0 /* LiveActivityManager.swift */; };
 		BC940B212A69F33500D2C6B0 /* OrderAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC940B202A69F33500D2C6B0 /* OrderAttributes.swift */; };
-		BC940B222A69F36700D2C6B0 /* OrderAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC940B202A69F33500D2C6B0 /* OrderAttributes.swift */; };
 		BC940B262A69FEBA00D2C6B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC940B252A69FEBA00D2C6B0 /* AppDelegate.swift */; };
 		BCA574FA2A5CCFBD0029ECB1 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCA574F92A5CCFBD0029ECB1 /* WidgetKit.framework */; };
 		BCA574FC2A5CCFBD0029ECB1 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCA574FB2A5CCFBD0029ECB1 /* SwiftUI.framework */; };
@@ -28,6 +27,13 @@
 		BCA575012A5CCFBD0029ECB1 /* CoffeeShopWidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA575002A5CCFBD0029ECB1 /* CoffeeShopWidgetLiveActivity.swift */; };
 		BCA575052A5CCFBF0029ECB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCA575042A5CCFBF0029ECB1 /* Assets.xcassets */; };
 		BCA575092A5CCFBF0029ECB1 /* Coffee Shop WidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = BCA574F72A5CCFBD0029ECB1 /* Coffee Shop WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BCAEBB272B21459F002CE7A2 /* RepeatOrderIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAEBB262B21459F002CE7A2 /* RepeatOrderIntent.swift */; };
+		BCAEBB292B215A3A002CE7A2 /* RepeatOrderIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAEBB262B21459F002CE7A2 /* RepeatOrderIntent.swift */; };
+		BCAEBB2A2B215A3F002CE7A2 /* OrdersManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9306682ABCF4190095317F /* OrdersManager.swift */; };
+		BCAEBB2B2B215A48002CE7A2 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB63BF42A4B94AA0045B17E /* Order.swift */; };
+		BCAEBB2C2B215A4B002CE7A2 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC779E52A4E4F0300F5539F /* MenuItem.swift */; };
+		BCAEBB2D2B215A53002CE7A2 /* Coffee.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB63BF52A4B94AA0045B17E /* Coffee.swift */; };
+		BCAEBB2E2B215A5F002CE7A2 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC779E32A4E4E4300F5539F /* Food.swift */; };
 		BCB63BFD2A4B94AA0045B17E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCB63BF02A4B94AA0045B17E /* Assets.xcassets */; };
 		BCB63BFE2A4B94AA0045B17E /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB63BF22A4B94AA0045B17E /* CustomButton.swift */; };
 		BCB63BFF2A4B94AA0045B17E /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB63BF42A4B94AA0045B17E /* Order.swift */; };
@@ -40,7 +46,13 @@
 		BCC779E42A4E4E4300F5539F /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC779E32A4E4E4300F5539F /* Food.swift */; };
 		BCC779E62A4E4F0300F5539F /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC779E52A4E4F0300F5539F /* MenuItem.swift */; };
 		BCCD010A2AC0DAE700041327 /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCD01092AC0DAE700041327 /* ContainerView.swift */; };
+		BCEE1A1F2B22274500DA0967 /* LiveActivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC940B1E2A69F2DA00D2C6B0 /* LiveActivityManager.swift */; };
 		BCF37BA52A5217010098F557 /* MenuDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF37BA42A5217010098F557 /* MenuDetailsView.swift */; };
+		BCF4BEAB2B1FED7600F8A7AA /* CoffeeShopWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF4BEAA2B1FED7600F8A7AA /* CoffeeShopWidget.swift */; };
+		BCF4BEB02B1FEFEF00F8A7AA /* CoffeeOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF4BEAF2B1FEFEF00F8A7AA /* CoffeeOrder.swift */; };
+		BCF4BEB32B1FF16E00F8A7AA /* LastOrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF4BEB22B1FF16E00F8A7AA /* LastOrderView.swift */; };
+		BCF4BEB52B1FF46700F8A7AA /* CoffeeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF4BEB42B1FF46700F8A7AA /* CoffeeProvider.swift */; };
+		BCF4BEB82B1FF9E100F8A7AA /* OrderAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC940B202A69F33500D2C6B0 /* OrderAttributes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +103,7 @@
 		BCA575002A5CCFBD0029ECB1 /* CoffeeShopWidgetLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopWidgetLiveActivity.swift; sourceTree = "<group>"; };
 		BCA575042A5CCFBF0029ECB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BCA575062A5CCFBF0029ECB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCAEBB262B21459F002CE7A2 /* RepeatOrderIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatOrderIntent.swift; sourceTree = "<group>"; };
 		BCB63BF02A4B94AA0045B17E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BCB63BF22A4B94AA0045B17E /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		BCB63BF42A4B94AA0045B17E /* Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
@@ -104,6 +117,10 @@
 		BCC779E52A4E4F0300F5539F /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 		BCCD01092AC0DAE700041327 /* ContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerView.swift; sourceTree = "<group>"; };
 		BCF37BA42A5217010098F557 /* MenuDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuDetailsView.swift; sourceTree = "<group>"; };
+		BCF4BEAA2B1FED7600F8A7AA /* CoffeeShopWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopWidget.swift; sourceTree = "<group>"; };
+		BCF4BEAF2B1FEFEF00F8A7AA /* CoffeeOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeOrder.swift; sourceTree = "<group>"; };
+		BCF4BEB22B1FF16E00F8A7AA /* LastOrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastOrderView.swift; sourceTree = "<group>"; };
+		BCF4BEB42B1FF46700F8A7AA /* CoffeeProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,11 +201,21 @@
 			isa = PBXGroup;
 			children = (
 				BCA574FE2A5CCFBD0029ECB1 /* CoffeeShopWidgetBundle.swift */,
-				BCA575002A5CCFBD0029ECB1 /* CoffeeShopWidgetLiveActivity.swift */,
-				BCA575042A5CCFBF0029ECB1 /* Assets.xcassets */,
-				BCA575062A5CCFBF0029ECB1 /* Info.plist */,
+				BCF4BEB12B1FF14C00F8A7AA /* Views */,
+				BCF4BEAD2B1FEEEA00F8A7AA /* Widgets */,
+				BCF4BEAC2B1FEEE400F8A7AA /* Providers */,
+				BCF4BEAE2B1FEFE100F8A7AA /* Entries */,
+				BCF4BEB92B1FFA8700F8A7AA /* Resources */,
 			);
 			path = "Coffee Shop Widget";
+			sourceTree = "<group>";
+		};
+		BCAEBB282B2145A2002CE7A2 /* Intents */ = {
+			isa = PBXGroup;
+			children = (
+				BCAEBB262B21459F002CE7A2 /* RepeatOrderIntent.swift */,
+			);
+			path = Intents;
 			sourceTree = "<group>";
 		};
 		BCB63BEF2A4B94AA0045B17E /* CoffeeShopDemo */ = {
@@ -200,6 +227,7 @@
 				BCB63BF32A4B94AA0045B17E /* Models */,
 				BC940B1D2A69F2CB00D2C6B0 /* Managers */,
 				BC8E9B752AC1009B00695DC4 /* Tips */,
+				BCAEBB282B2145A2002CE7A2 /* Intents */,
 				BCB63C082A4B9A0C0045B17E /* Resources */,
 				BCB63BF12A4B94AA0045B17E /* Utils */,
 				BCB63BF62A4B94AA0045B17E /* Preview Content */,
@@ -260,6 +288,48 @@
 				BCB63BF02A4B94AA0045B17E /* Assets.xcassets */,
 				BCB63C062A4B99DF0045B17E /* Localizable.xcstrings */,
 				BC940B232A69F77000D2C6B0 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BCF4BEAC2B1FEEE400F8A7AA /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				BCF4BEB42B1FF46700F8A7AA /* CoffeeProvider.swift */,
+			);
+			path = Providers;
+			sourceTree = "<group>";
+		};
+		BCF4BEAD2B1FEEEA00F8A7AA /* Widgets */ = {
+			isa = PBXGroup;
+			children = (
+				BCF4BEAA2B1FED7600F8A7AA /* CoffeeShopWidget.swift */,
+				BCA575002A5CCFBD0029ECB1 /* CoffeeShopWidgetLiveActivity.swift */,
+			);
+			path = Widgets;
+			sourceTree = "<group>";
+		};
+		BCF4BEAE2B1FEFE100F8A7AA /* Entries */ = {
+			isa = PBXGroup;
+			children = (
+				BCF4BEAF2B1FEFEF00F8A7AA /* CoffeeOrder.swift */,
+			);
+			path = Entries;
+			sourceTree = "<group>";
+		};
+		BCF4BEB12B1FF14C00F8A7AA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BCF4BEB22B1FF16E00F8A7AA /* LastOrderView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BCF4BEB92B1FFA8700F8A7AA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BCA575042A5CCFBF0029ECB1 /* Assets.xcassets */,
+				BCA575062A5CCFBF0029ECB1 /* Info.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -367,6 +437,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCAEBB272B21459F002CE7A2 /* RepeatOrderIntent.swift in Sources */,
 				BCB63C052A4B94AA0045B17E /* OrderConfirmationView.swift in Sources */,
 				BCB63BFF2A4B94AA0045B17E /* Order.swift in Sources */,
 				BC940B212A69F33500D2C6B0 /* OrderAttributes.swift in Sources */,
@@ -398,9 +469,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC940B222A69F36700D2C6B0 /* OrderAttributes.swift in Sources */,
+				BCF4BEB82B1FF9E100F8A7AA /* OrderAttributes.swift in Sources */,
+				BCAEBB292B215A3A002CE7A2 /* RepeatOrderIntent.swift in Sources */,
+				BCAEBB2B2B215A48002CE7A2 /* Order.swift in Sources */,
+				BCF4BEB52B1FF46700F8A7AA /* CoffeeProvider.swift in Sources */,
+				BCF4BEB02B1FEFEF00F8A7AA /* CoffeeOrder.swift in Sources */,
+				BCAEBB2A2B215A3F002CE7A2 /* OrdersManager.swift in Sources */,
 				BCA575012A5CCFBD0029ECB1 /* CoffeeShopWidgetLiveActivity.swift in Sources */,
+				BCF4BEB32B1FF16E00F8A7AA /* LastOrderView.swift in Sources */,
+				BCAEBB2C2B215A4B002CE7A2 /* MenuItem.swift in Sources */,
+				BCAEBB2E2B215A5F002CE7A2 /* Food.swift in Sources */,
 				BCA574FF2A5CCFBD0029ECB1 /* CoffeeShopWidgetBundle.swift in Sources */,
+				BCF4BEAB2B1FED7600F8A7AA /* CoffeeShopWidget.swift in Sources */,
+				BCEE1A1F2B22274500DA0967 /* LiveActivityManager.swift in Sources */,
+				BCAEBB2D2B215A53002CE7A2 /* Coffee.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -604,8 +686,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = CTS5987F4Q;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Coffee Shop Widget/Info.plist";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Coffee Shop Widget/Resources/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Coffee Shop Widget";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
@@ -632,8 +714,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = CTS5987F4Q;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Coffee Shop Widget/Info.plist";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Coffee Shop Widget/Resources/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Coffee Shop Widget";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
