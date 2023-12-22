@@ -16,7 +16,7 @@ Below is the list of future features I've planned to add to the project
 `⚠️ Please Note that this is a live project`
 
 ## Interactive Widgets
-- Article: Cooming soon 🤓
+- Article: [Interactive Widgets in SwiftUI](https://medium.com/@blorenzop/widget-interactivity-331206a5824f)
 - Demo 👇
 
 https://github.com/blorenzo10/coffee-shop-demo/assets/20937316/6c503897-ccfa-455e-adbd-194a76ccab09
