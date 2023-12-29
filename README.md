@@ -8,12 +8,19 @@ Below is the list of future features I've planned to add to the project
 - [x] TipKit
 - [x] Interactive Widgets
 - [x] MapKit
-- [ ] Icon change animation
+- [x] Icon change animation
 - [ ] Xcode Cloud
 - [ ] Unit Testing
 
 # What's included?
 `⚠️ Please Note that this is a live project`
+
+## Icon change animation
+- Article: [Changing your iOS App Icon programmatically](https://medium.com/@blorenzop/app-icon-programmatically-51fca3130871)
+- Demo 👇
+
+https://github.com/blorenzo10/coffee-shop-demo/assets/20937316/bbcea1db-b1f4-4c40-8244-4a8cb192c037
+
 
 ## Interactive Widgets
 - Article: [Interactive Widgets in SwiftUI](https://medium.com/@blorenzop/widget-interactivity-331206a5824f)
