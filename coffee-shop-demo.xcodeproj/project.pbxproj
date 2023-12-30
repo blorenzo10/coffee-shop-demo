@@ -11,6 +11,10 @@
 		BC1F6C912B044B7300B05B2C /* CLLocationCoordinate2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1F6C902B044B7300B05B2C /* CLLocationCoordinate2D.swift */; };
 		BC3502602ABB8448001D0D95 /* OrderHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC35025F2ABB8448001D0D95 /* OrderHistoryView.swift */; };
 		BC46CB8C2B053C97002E4544 /* MKCoordinateRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC46CB8B2B053C97002E4544 /* MKCoordinateRegion.swift */; };
+		BC4DF4462B2F955500C78E13 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4DF4452B2F955500C78E13 /* CardView.swift */; };
+		BC4DF4482B2FA5F700C78E13 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4DF4472B2FA5F700C78E13 /* SettingsView.swift */; };
+		BC4DF44A2B2FA7CE00C78E13 /* CommonUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4DF4492B2FA7CE00C78E13 /* CommonUtils.swift */; };
+		BC4DF44C2B2FAAE500C78E13 /* AppIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4DF44B2B2FAAE500C78E13 /* AppIcon.swift */; };
 		BC6FEBC52B099475002AAC3C /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6FEBC42B099475002AAC3C /* CircleButton.swift */; };
 		BC6FEBC72B09BB1A002AAC3C /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6FEBC62B09BB1A002AAC3C /* LocationModel.swift */; };
 		BC70820E2B13DFB40045D1C1 /* MapDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC70820D2B13DFB40045D1C1 /* MapDemoView.swift */; };
@@ -34,6 +38,7 @@
 		BCAEBB2C2B215A4B002CE7A2 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC779E52A4E4F0300F5539F /* MenuItem.swift */; };
 		BCAEBB2D2B215A53002CE7A2 /* Coffee.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB63BF52A4B94AA0045B17E /* Coffee.swift */; };
 		BCAEBB2E2B215A5F002CE7A2 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC779E32A4E4E4300F5539F /* Food.swift */; };
+		BCAFD8E92B3A007300541CD9 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAFD8E82B3A007300541CD9 /* AppError.swift */; };
 		BCB63BFD2A4B94AA0045B17E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCB63BF02A4B94AA0045B17E /* Assets.xcassets */; };
 		BCB63BFE2A4B94AA0045B17E /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB63BF22A4B94AA0045B17E /* CustomButton.swift */; };
 		BCB63BFF2A4B94AA0045B17E /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB63BF42A4B94AA0045B17E /* Order.swift */; };
@@ -43,6 +48,7 @@
 		BCB63C032A4B94AA0045B17E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB63BFA2A4B94AA0045B17E /* HomeView.swift */; };
 		BCB63C052A4B94AA0045B17E /* OrderConfirmationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB63BFC2A4B94AA0045B17E /* OrderConfirmationView.swift */; };
 		BCB63C072A4B99DF0045B17E /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = BCB63C062A4B99DF0045B17E /* Localizable.xcstrings */; };
+		BCC52FD52B28E9470017C94F /* IconAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC52FD42B28E9470017C94F /* IconAnimationView.swift */; };
 		BCC779E42A4E4E4300F5539F /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC779E32A4E4E4300F5539F /* Food.swift */; };
 		BCC779E62A4E4F0300F5539F /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC779E52A4E4F0300F5539F /* MenuItem.swift */; };
 		BCCD010A2AC0DAE700041327 /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCD01092AC0DAE700041327 /* ContainerView.swift */; };
@@ -84,6 +90,10 @@
 		BC1F6C902B044B7300B05B2C /* CLLocationCoordinate2D.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLLocationCoordinate2D.swift; sourceTree = "<group>"; };
 		BC35025F2ABB8448001D0D95 /* OrderHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderHistoryView.swift; sourceTree = "<group>"; };
 		BC46CB8B2B053C97002E4544 /* MKCoordinateRegion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKCoordinateRegion.swift; sourceTree = "<group>"; };
+		BC4DF4452B2F955500C78E13 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		BC4DF4472B2FA5F700C78E13 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		BC4DF4492B2FA7CE00C78E13 /* CommonUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonUtils.swift; sourceTree = "<group>"; };
+		BC4DF44B2B2FAAE500C78E13 /* AppIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIcon.swift; sourceTree = "<group>"; };
 		BC6C77322A48DAE80012E96F /* Coffee Shop App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coffee Shop App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC6FEBC42B099475002AAC3C /* CircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
 		BC6FEBC62B09BB1A002AAC3C /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
@@ -104,6 +114,7 @@
 		BCA575042A5CCFBF0029ECB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BCA575062A5CCFBF0029ECB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BCAEBB262B21459F002CE7A2 /* RepeatOrderIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatOrderIntent.swift; sourceTree = "<group>"; };
+		BCAFD8E82B3A007300541CD9 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 		BCB63BF02A4B94AA0045B17E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BCB63BF22A4B94AA0045B17E /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		BCB63BF42A4B94AA0045B17E /* Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
@@ -113,6 +124,7 @@
 		BCB63BFA2A4B94AA0045B17E /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		BCB63BFC2A4B94AA0045B17E /* OrderConfirmationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderConfirmationView.swift; sourceTree = "<group>"; };
 		BCB63C062A4B99DF0045B17E /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		BCC52FD42B28E9470017C94F /* IconAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconAnimationView.swift; sourceTree = "<group>"; };
 		BCC779E32A4E4E4300F5539F /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		BCC779E52A4E4F0300F5539F /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 		BCCD01092AC0DAE700041327 /* ContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerView.swift; sourceTree = "<group>"; };
@@ -167,6 +179,7 @@
 			children = (
 				BCB63BF22A4B94AA0045B17E /* CustomButton.swift */,
 				BC6FEBC42B099475002AAC3C /* CircleButton.swift */,
+				BC4DF4452B2F955500C78E13 /* CardView.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -243,6 +256,7 @@
 				BC93066C2ABCFD2B0095317F /* Notification+Utils.swift */,
 				BC1F6C902B044B7300B05B2C /* CLLocationCoordinate2D.swift */,
 				BC46CB8B2B053C97002E4544 /* MKCoordinateRegion.swift */,
+				BC4DF4492B2FA7CE00C78E13 /* CommonUtils.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -256,6 +270,8 @@
 				BCC779E52A4E4F0300F5539F /* MenuItem.swift */,
 				BC940B202A69F33500D2C6B0 /* OrderAttributes.swift */,
 				BC6FEBC62B09BB1A002AAC3C /* LocationModel.swift */,
+				BC4DF44B2B2FAAE500C78E13 /* AppIcon.swift */,
+				BCAFD8E82B3A007300541CD9 /* AppError.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -271,6 +287,7 @@
 		BCB63BF92A4B94AA0045B17E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				BCC52FD62B28EB180017C94F /* IconAnimation */,
 				BCB63BFA2A4B94AA0045B17E /* HomeView.swift */,
 				BCB63BFC2A4B94AA0045B17E /* OrderConfirmationView.swift */,
 				BCF37BA42A5217010098F557 /* MenuDetailsView.swift */,
@@ -278,6 +295,7 @@
 				BCCD01092AC0DAE700041327 /* ContainerView.swift */,
 				BC1F6C8E2B0449AF00B05B2C /* MapContainerView.swift */,
 				BC70820D2B13DFB40045D1C1 /* MapDemoView.swift */,
+				BC4DF4472B2FA5F700C78E13 /* SettingsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -290,6 +308,14 @@
 				BC940B232A69F77000D2C6B0 /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		BCC52FD62B28EB180017C94F /* IconAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				BCC52FD42B28E9470017C94F /* IconAnimationView.swift */,
+			);
+			path = IconAnimation;
 			sourceTree = "<group>";
 		};
 		BCF4BEAC2B1FEEE400F8A7AA /* Providers */ = {
@@ -438,15 +464,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				BCAEBB272B21459F002CE7A2 /* RepeatOrderIntent.swift in Sources */,
+				BC4DF4462B2F955500C78E13 /* CardView.swift in Sources */,
 				BCB63C052A4B94AA0045B17E /* OrderConfirmationView.swift in Sources */,
 				BCB63BFF2A4B94AA0045B17E /* Order.swift in Sources */,
 				BC940B212A69F33500D2C6B0 /* OrderAttributes.swift in Sources */,
+				BCC52FD52B28E9470017C94F /* IconAnimationView.swift in Sources */,
 				BC6FEBC72B09BB1A002AAC3C /* LocationModel.swift in Sources */,
 				BCB63BFE2A4B94AA0045B17E /* CustomButton.swift in Sources */,
 				BCB63C002A4B94AA0045B17E /* Coffee.swift in Sources */,
 				BC940B1F2A69F2DA00D2C6B0 /* LiveActivityManager.swift in Sources */,
 				BC93066D2ABCFD2B0095317F /* Notification+Utils.swift in Sources */,
 				BCF37BA52A5217010098F557 /* MenuDetailsView.swift in Sources */,
+				BC4DF44A2B2FA7CE00C78E13 /* CommonUtils.swift in Sources */,
+				BCAFD8E92B3A007300541CD9 /* AppError.swift in Sources */,
 				BC93066B2ABCF6A90095317F /* Router.swift in Sources */,
 				BC70820E2B13DFB40045D1C1 /* MapDemoView.swift in Sources */,
 				BC1F6C8F2B0449AF00B05B2C /* MapContainerView.swift in Sources */,
@@ -454,8 +484,10 @@
 				BC8E9B772AC100AD00695DC4 /* HistoryTip.swift in Sources */,
 				BC940B262A69FEBA00D2C6B0 /* AppDelegate.swift in Sources */,
 				BC1F6C912B044B7300B05B2C /* CLLocationCoordinate2D.swift in Sources */,
+				BC4DF44C2B2FAAE500C78E13 /* AppIcon.swift in Sources */,
 				BC46CB8C2B053C97002E4544 /* MKCoordinateRegion.swift in Sources */,
 				BC9306692ABCF4190095317F /* OrdersManager.swift in Sources */,
+				BC4DF4482B2FA5F700C78E13 /* SettingsView.swift in Sources */,
 				BCC779E42A4E4E4300F5539F /* Food.swift in Sources */,
 				BC6FEBC52B099475002AAC3C /* CircleButton.swift in Sources */,
 				BCC779E62A4E4F0300F5539F /* MenuItem.swift in Sources */,
@@ -620,8 +652,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_ALTERNATE_APPICON_NAMES = "";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CoffeeShopDemo/Preview Content\"";
@@ -638,7 +672,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.blorenzo.coffeeshop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -651,8 +685,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_ALTERNATE_APPICON_NAMES = "";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CoffeeShopDemo/Preview Content\"";
@@ -669,7 +705,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.blorenzo.coffeeshop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -681,6 +717,7 @@
 		BCA5750B2A5CCFBF0029ECB1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_ALTERNATE_APPICON_NAMES = "";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
@@ -709,6 +746,7 @@
 		BCA5750C2A5CCFBF0029ECB1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_ALTERNATE_APPICON_NAMES = "";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;

@@ -9,10 +9,12 @@ import SwiftUI
 import TipKit
 
 struct HomeView: View {
+    @AppStorage("showedUpdateIconView") var updateIconDidShow: Bool = false
     /// Environment properties
     @EnvironmentObject var router: Router
     /// State properties
     @State private var showingCoffeeDetails = false
+    @State private var showUpdateIconView = false
     @State private var showingMap = false
     @State private var selectedItem: AnyMenuItem? = nil
     @State private var orderPrice: Float = 0.0
@@ -93,19 +95,20 @@ struct HomeView: View {
                 .presentationDragIndicator(.visible)
                 .presentationCornerRadius(24)
         })
-//        .sheet(isPresented: $showingMap, content: {
-//            MapContainerView()
-//                .presentationDetents([.medium])
-//        })
+        .fullScreenCover(isPresented: $showUpdateIconView, content: {
+            IconAnimationView()
+        })
         .onReceive(NotificationCenter.default.publisher(for: .clearOrder)) { _ in
             order = Order()
+        }
+        .onAppear {
+            checkVersion()
         }
     }
 }
 
-
+// MARK: - UI Components
 extension HomeView {
-    
     func headerView(title: String) -> some View {
         return HStack {
             Text(title)
@@ -116,7 +119,21 @@ extension HomeView {
         .frame(maxWidth: .infinity, minHeight: 70)
         .background(Color.white)
     }
-    
+}
+
+// MARK: - Helpers
+private extension HomeView {
+    func checkVersion() {
+        guard let version = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String else {
+            fatalError("CFBundleShortVersionString should not be missing from info dictionary")
+        }
+        if version != "1.0.0" {
+            if !updateIconDidShow {
+                showUpdateIconView = true
+                updateIconDidShow = true
+            }
+        }
+    }
 }
 
 #Preview {

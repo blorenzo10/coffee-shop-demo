@@ -21,7 +21,17 @@ struct CoffeeShopDemoApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContainerView()
+            TabView {
+                ContainerView()
+                    .tabItem {
+                        Label("Home", systemImage: "house")
+                    }
+                
+                SettingsView()
+                    .tabItem {
+                        Label("Settings", systemImage: "gear")
+                    }
+            }
         }
     }
 }

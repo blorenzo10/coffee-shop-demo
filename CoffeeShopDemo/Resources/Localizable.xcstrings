@@ -48,6 +48,9 @@
         }
       }
     },
+    "App Icon" : {
+
+    },
     "Cancel" : {
 
     },
@@ -87,6 +90,9 @@
           }
         }
       }
+    },
+    "Confirm the change" : {
+
     },
     "Cortado" : {
 
@@ -226,6 +232,9 @@
         }
       }
     },
+    "Pss: you can revert it from the settings tab if you don't like it 😉" : {
+
+    },
     "Regular" : {
       "localizations" : {
         "en" : {
@@ -243,6 +252,12 @@
       }
     },
     "Repeat Last Coffee" : {
+
+    },
+    "Revert to original" : {
+
+    },
+    "Settings" : {
 
     },
     "Size" : {
@@ -284,6 +299,9 @@
     "Total" : {
 
     },
+    "Update your app's icon with the new one" : {
+
+    },
     "View my order & checkout" : {
       "localizations" : {
         "es" : {
@@ -293,6 +311,9 @@
           }
         }
       }
+    },
+    "You can customize the app icon to fit in with your home theme" : {
+
     },
     "You can quickly repeat any order you want" : {
 
