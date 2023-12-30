@@ -6,11 +6,28 @@ It's meant to be a complement to my Medium articles.
 # Roadmap
 Below is the list of future features I've planned to add to the project
 - [x] TipKit
-- [ ] Interactive Widgets
+- [x] Interactive Widgets
 - [x] MapKit
+- [x] Icon change animation
+- [ ] Xcode Cloud
+- [ ] Unit Testing
 
 # What's included?
 `⚠️ Please Note that this is a live project`
+
+## Icon change animation
+- Article: [Changing your iOS App Icon programmatically](https://medium.com/@blorenzop/app-icon-programmatically-51fca3130871)
+- Demo 👇
+
+https://github.com/blorenzo10/coffee-shop-demo/assets/20937316/bbcea1db-b1f4-4c40-8244-4a8cb192c037
+
+
+## Interactive Widgets
+- Article: [Interactive Widgets in SwiftUI](https://medium.com/@blorenzop/widget-interactivity-331206a5824f)
+- Demo 👇
+
+https://github.com/blorenzo10/coffee-shop-demo/assets/20937316/6c503897-ccfa-455e-adbd-194a76ccab09
+
 
 ## MapKit
 - Article: [Working with MapKit in SwiftUI](https://medium.com/@blorenzop/mapkit-swiftui-009a0eb1695c)
