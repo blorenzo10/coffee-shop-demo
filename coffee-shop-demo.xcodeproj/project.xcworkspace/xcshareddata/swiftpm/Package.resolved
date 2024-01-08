@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "hklogger",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Houlak/hklogger",
+      "state" : {
+        "revision" : "d976a9c21a18798cb102c3d7309a228d02ac699d",
+        "version" : "1.4.0"
+      }
+    }
+  ],
+  "version" : 2
+}

@@ -12,6 +12,7 @@ struct OrderConfirmationView: View {
     @EnvironmentObject var router: Router
     /// State properties
     @State private var showingAlert = false
+    @StateObject private var viewModel = ConfirmationViewModel()
     /// View's properties
     private var order: Order
     
@@ -74,7 +75,7 @@ struct OrderConfirmationView: View {
                 
                 Button("Place Order") {
                     showingAlert = true
-                    OrdersManager.shared.add(order)
+                    viewModel.tryToPlaceOrder(order)
                 }
                 .frame(maxWidth: .infinity)
                 .buttonStyle(BrownButton())
@@ -101,6 +102,7 @@ struct OrderConfirmationView: View {
                 })
             )
         }
+        .alert(isPresented: $viewModel.showError, withError: viewModel.appError)
         .toolbar {
             ToolbarItem(placement: .navigationBarLeading) {
                 Button {

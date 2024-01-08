@@ -10,6 +10,8 @@ import SwiftUI
 struct SettingsView: View {
     /// State properties
     @State private var selectedIcon: AppIcon = .default
+    @State private var presentingErrorAlert = false
+    @State private var appError: AppError?
     
     var body: some View {
         Form {
@@ -22,8 +24,7 @@ struct SettingsView: View {
                         get: { selectedIcon == appIcon },
                         set: { newValue in
                             if newValue {
-                                selectedIcon = appIcon
-                                updateIcon()
+                                tryToUpdateIcon(with: appIcon)
                             }
                         }
                     ), label: {
@@ -41,8 +42,12 @@ struct SettingsView: View {
                 }
             }
         }
+        .alert(isPresented: $presentingErrorAlert, withError: appError)
         .onAppear {
             getCurrentIcon()
+        }
+        .onChange(of: appError) {
+            presentingErrorAlert = appError != nil
         }
     }
 }
@@ -57,9 +62,18 @@ private extension SettingsView {
         }
     }
     
-    func updateIcon() {
+    func tryToUpdateIcon(with icon: AppIcon?) {
+        guard let icon else { return }
         Task {
-            await CommonUtils.updateAppIcon(with: selectedIcon.name)
+            do {
+                try await CommonUtils.updateAppIcon(with: icon.name)
+                selectedIcon = icon
+            } catch let error as AppError {
+                appError = error
+                print(error)
+            } catch {
+                print(error)
+            }
         }
     }
 }

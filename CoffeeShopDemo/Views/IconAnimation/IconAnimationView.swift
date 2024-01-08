@@ -89,7 +89,7 @@ private extension IconAnimationView {
     
     func updateIcon() {
         Task {
-            await CommonUtils.updateAppIcon(with: "AppIcon-Update-1")
+//            await CommonUtils.updateAppIcon(with: "AppIcon-Update-1")
             dismiss()
         }
     }

@@ -11,16 +11,14 @@ import SwiftUI
 @MainActor
 class CommonUtils {
     
-    static func updateAppIcon(with iconName: String?) async {
-        Task {
-            do {
-                guard UIApplication.shared.alternateIconName != iconName else {
-                    return
-                }
-                try await UIApplication.shared.setAlternateIconName(iconName)
-            } catch {
-                print("Could not update icon \(error.localizedDescription)")
+    static func updateAppIcon(with iconName: String?) async throws {
+        do {
+            guard UIApplication.shared.alternateIconName != iconName else {
+                return
             }
+            try await UIApplication.shared.setAlternateIconName(iconName)
+        } catch {
+            throw AppError(type: GeneralError.couldNotUpdateIcon, debugInfo: error.localizedDescription)
         }
     }
 }

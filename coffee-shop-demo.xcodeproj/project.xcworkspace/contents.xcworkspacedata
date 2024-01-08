@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:/Users/blorenzo/Desktop/dev/iOS/Personal/automatic-grammar-agreement-demo/coffee-shop-demo.xcodeproj">
+      location = "self:">
    </FileRef>
 </Workspace>

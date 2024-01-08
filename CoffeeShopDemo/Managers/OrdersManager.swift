@@ -14,9 +14,13 @@ final class OrdersManager {
     
     private init() {}
     
-    func add(_ order: Order) {
-        orders.append(order)
-        LiveActivityManager.shared.simulate()
+    func add(_ order: Order) throws {
+        if order.price >= 10 {
+            orders.append(order)
+            LiveActivityManager.shared.simulate()
+        } else {
+            throw AppError(type: OrderError.minimumNotMet(currentPrice: order.price))
+        }
     }
     
     func repeatLastOrder() {
@@ -46,7 +50,7 @@ final class OrdersManager {
     
     func addRandomOrder() {
         if orders.isEmpty {
-            add(Order(items: [OrderItem(item: AnyMenuItem(Coffee.flatwhite), size: .small, quantity: 1)]))   
+            try? add(Order(items: [OrderItem(item: AnyMenuItem(Coffee.flatwhite), size: .small, quantity: 1)]))
         }
     }
 }
