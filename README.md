@@ -18,7 +18,7 @@ Below is the list of future features I've planned to add to the project
 `⚠️ Please Note that this is a live project`
 
 ## Error handling
-- Article: Comming soon 🤓
+- Article: Comming soon: [Error handling in Swift](https://medium.com/@blorenzop/error-handling-in-swift-f9ca87490e26)
 - Demo 👇
 
 https://github.com/blorenzo10/coffee-shop-demo/assets/20937316/7d624d93-cc93-48dc-a6c6-2eac33eba5a4
