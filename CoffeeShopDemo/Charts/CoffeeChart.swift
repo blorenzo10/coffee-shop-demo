@@ -63,7 +63,7 @@ struct CoffeeChart: View {
             }
             Section {
                 VStack(alignment: .leading) {
-                    Text("Total coffee ordered")
+                    Text("Total")
                         .font(.callout)
                         .foregroundStyle(.secondary)
                     Text("\(coffees) coffees")
