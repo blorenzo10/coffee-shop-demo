@@ -8,13 +8,14 @@
 import Foundation
 import SwiftUI
 import AppIntents
+import Charts
 
-enum Coffee: MenuItemInfo {
+enum Coffee: String, MenuItemInfo, Plottable {
     
-    case latte
-    case cappuccino
-    case cortado
-    case flatwhite
+    case latte = "Latte"
+    case cappuccino = "Cappuccino"
+    case cortado = "Cortado"
+    case flatwhite = "FlatWhite"
     
     var name: String {
         switch self {

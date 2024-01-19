@@ -27,6 +27,11 @@ struct CoffeeShopDemoApp: App {
                         Label("Home", systemImage: "house")
                     }
                 
+                CoffeeChart()
+                    .tabItem {
+                        Label("Data", systemImage: "chart.xyaxis.line")
+                    }
+                
                 SettingsView()
                     .tabItem {
                         Label("Settings", systemImage: "gear")

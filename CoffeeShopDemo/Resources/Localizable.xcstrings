@@ -10,6 +10,9 @@
     "%@ 🤩🥖🥐" : {
 
     },
+    "%lld" : {
+
+    },
     "%lld %@ %@" : {
       "localizations" : {
         "en" : {
@@ -25,6 +28,24 @@
           }
         }
       }
+    },
+    "%lld cappuccinos" : {
+
+    },
+    "%lld coffees" : {
+
+    },
+    "%lld coffees on average" : {
+
+    },
+    "%lld cortados" : {
+
+    },
+    "%lld flat whites" : {
+
+    },
+    "%lld lattes" : {
+
     },
     "$%@" : {
 
@@ -48,7 +69,13 @@
         }
       }
     },
+    "Amount" : {
+
+    },
     "App Icon" : {
+
+    },
+    "Average" : {
 
     },
     "Cancel" : {
@@ -91,6 +118,12 @@
         }
       }
     },
+    "Coffee Type" : {
+
+    },
+    "Coffee types in the last %lld months" : {
+
+    },
     "Confirm the change" : {
 
     },
@@ -106,6 +139,9 @@
           }
         }
       }
+    },
+    "Data" : {
+
     },
     "Drinks" : {
       "extractionState" : "stale",
@@ -183,6 +219,9 @@
         }
       }
     },
+    "Month" : {
+
+    },
     "Muffin" : {
       "localizations" : {
         "es" : {
@@ -204,6 +243,9 @@
       }
     },
     "Ok" : {
+
+    },
+    "Options" : {
 
     },
     "Order" : {
@@ -260,6 +302,9 @@
     "Settings" : {
 
     },
+    "Show Average" : {
+
+    },
     "Size" : {
       "localizations" : {
         "es" : {
@@ -297,6 +342,9 @@
       }
     },
     "Total" : {
+
+    },
+    "Total coffee ordered" : {
 
     },
     "Update your app's icon with the new one" : {
