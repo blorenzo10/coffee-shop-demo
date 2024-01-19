@@ -9,11 +9,20 @@ Below is the list of future features I've planned to add to the project
 - [x] Interactive Widgets
 - [x] MapKit
 - [x] Icon change animation
+- [x] Error handling
 - [ ] Xcode Cloud
 - [ ] Unit Testing
+- [ ] Animations
 
 # What's included?
 `⚠️ Please Note that this is a live project`
+
+## Error handling
+- Article: Comming soon: [Error handling in Swift](https://medium.com/@blorenzop/error-handling-in-swift-f9ca87490e26)
+- Demo 👇
+
+https://github.com/blorenzo10/coffee-shop-demo/assets/20937316/7d624d93-cc93-48dc-a6c6-2eac33eba5a4
+
 
 ## Icon change animation
 - Article: [Changing your iOS App Icon programmatically](https://medium.com/@blorenzop/app-icon-programmatically-51fca3130871)
