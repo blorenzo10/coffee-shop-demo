@@ -10,12 +10,31 @@ Below is the list of future features I've planned to add to the project
 - [x] MapKit
 - [x] Icon change animation
 - [x] Error handling
+- [x] Charts
 - [ ] Xcode Cloud
 - [ ] Unit Testing
 - [ ] Animations
 
 # What's included?
 `⚠️ Please Note that this is a live project`
+
+- [Charts](#Charts)
+- [Error handling](#Error-handling)
+- [Icon change animation](#Icon-change-animation)
+- [Interactive Widgets](#Interactive-Widgets)
+- [MapKit](#MapKit)
+- [TipKit](#TipKit)
+- [Automatic Grammar Agreement](#Automatic-Grammar-Agreement)
+- [Type Erasure](#Type-Erasure)
+- [Live Activities](#Live-Activities)
+- [Dynamic Island](#Dynamic-Island)
+  
+## Charts
+- Article: Comming soon 🤓
+- Demo 👇
+
+https://github.com/blorenzo10/coffee-shop-demo/assets/20937316/7f4c53a2-475e-4d95-bdb1-591464968c01
+
 
 ## Error handling
 - Article: Comming soon: [Error handling in Swift](https://medium.com/@blorenzop/error-handling-in-swift-f9ca87490e26)
@@ -67,9 +86,6 @@ https://github.com/blorenzo10/coffee-shop-demo/assets/20937316/baafcab5-4a9f-4cf
 - Demo 👇
 
 https://github.com/blorenzo10/coffee-shop-demo/assets/20937316/0ac86623-37de-4c62-834b-e26957b90711
-
-
-
 
 
 ## Dynamic Island
