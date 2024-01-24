@@ -1,7 +1,7 @@
 # Coffee Shop Demo App
 This project serves as a support to test different features and characteristics regarding SwiftUI and the iOS ecosystem. 
 
-It's meant to be a complement to my Medium articles.
+It's meant to be a complement to my [Blog articles](https://medium.com/@blorenzop).
 
 # Roadmap
 Below is the list of future features I've planned to add to the project
@@ -30,7 +30,7 @@ Below is the list of future features I've planned to add to the project
 - [Dynamic Island](#Dynamic-Island)
   
 ## Charts
-- Article: Comming soon 🤓
+- Article: [Introduction to Charts in SwiftUI](https://medium.com/@blorenzop/swiftui-charts-b6fa4aca46db)
 - Demo 👇
 
 https://github.com/blorenzo10/coffee-shop-demo/assets/20937316/7f4c53a2-475e-4d95-bdb1-591464968c01
