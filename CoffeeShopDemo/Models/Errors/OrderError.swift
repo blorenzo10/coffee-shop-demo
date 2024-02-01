@@ -33,4 +33,19 @@ enum OrderError: LocalizedError {
             return "Add \(10-currentPrice) to your order"
         }
     }
+    
+    var code: Int {
+        switch self {
+        case .unexpected:
+            return 0
+        case .outOfCoffee:
+            return 1
+        case .minimumNotMet:
+            return 2
+        }
+    }
+}
+
+extension OrderError: Equatable {
+    
 }

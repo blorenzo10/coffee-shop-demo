@@ -32,7 +32,7 @@ final class OrdersManager {
     func getLastCoffee() -> String? {
         for order in orders.reversed() {
             if let coffeeItem = order.items.first(where: { $0.item.isType(Coffee.self) }) {
-                return "\(coffeeItem.size.description) \(coffeeItem.item.name)"
+                return coffeeItem.itemDescription
             }
         }
         return nil
@@ -52,5 +52,9 @@ final class OrdersManager {
         if orders.isEmpty {
             try? add(Order(items: [OrderItem(item: AnyMenuItem(Coffee.flatwhite), size: .small, quantity: 1)]))
         }
+    }
+    
+    func removeAllOrders() {
+        orders.removeAll()
     }
 }

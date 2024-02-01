@@ -13,6 +13,8 @@ struct HistoryTip: Tip {
     /// Parameters-Rules
     @Parameter
     static var alreadyDiscovered: Bool = false
+    @Parameter
+    static var needToShowTip: Bool = false
     /// Event-Rules
     static let orderPlaced = Event(id: "order-placed")
     
@@ -36,11 +38,15 @@ struct HistoryTip: Tip {
     var rules: [Rule] {
         [
             #Rule(Self.orderPlaced) {
-                $0.donations.count > 0
+                $0.donations.donatedWithin(.minutes(1)).count > 0
             },
             
             #Rule(Self.$alreadyDiscovered) {
                 $0 == false
+            },
+            
+            #Rule(Self.$needToShowTip) {
+                $0 == true
             }
         ]
     }

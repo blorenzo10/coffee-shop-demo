@@ -18,6 +18,10 @@ struct OrderItem: Hashable {
         return item.price[size]! * Float(quantity)
     }
     
+    var itemDescription: String {
+        return "\(size.description) \(item.name)"
+    }
+    
     static func == (lhs: OrderItem, rhs: OrderItem) -> Bool {
         return lhs.id == rhs.id
     }
