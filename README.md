@@ -11,13 +11,18 @@ Below is the list of future features I've planned to add to the project
 - [x] Icon change animation
 - [x] Error handling
 - [x] Charts
-- [ ] Xcode Cloud
+- [x] Xcode Cloud
 - [ ] Unit Testing
 - [ ] Animations
 
+# Requests
+I want to provide as much value as I possibly can to the iOS developers who are starting their journey (and to more advanced devs as well). So, If you've something in mind that could be added to the project, please submit a new request from the `Issues` tab
+
+I'll try my best to do it and to make a new article with the details 🤓
+
 # What's included?
 `⚠️ Please Note that this is a live project`
-
+- [Unit Tests](#Unit-Tests)
 - [Charts](#Charts)
 - [Error handling](#Error-handling)
 - [Icon change animation](#Icon-change-animation)
@@ -28,7 +33,14 @@ Below is the list of future features I've planned to add to the project
 - [Type Erasure](#Type-Erasure)
 - [Live Activities](#Live-Activities)
 - [Dynamic Island](#Dynamic-Island)
-  
+
+## Unit Tests
+- Article: [Unit Test in Swift: A Starting Guide](https://medium.com/@blorenzop/swift-unit-tets-530a8d271f4d) 
+- Demo 👇
+
+https://github.com/blorenzo10/coffee-shop-demo/assets/20937316/a6a396b1-0190-4cc5-84b0-5f95f37af36c
+
+
 ## Charts
 - Article: [Introduction to Charts in SwiftUI](https://medium.com/@blorenzop/swiftui-charts-b6fa4aca46db)
 - Demo 👇
@@ -94,9 +106,3 @@ https://github.com/blorenzo10/coffee-shop-demo/assets/20937316/0ac86623-37de-4c6
 
 https://github.com/blorenzo10/coffee-shop-demo/assets/20937316/6a890fb8-a5ee-42b8-b06b-79dfb6f3b502
 
-
-
-# Requests
-I want to provide as much value as I possibly can to the iOS developers who are starting their journey (and to more advanced devs as well). So, If you've something in mind that could be added to the project, please submit a new request from the `Issues` tab
-
-I'll try my best to do it and to make a new article with the details 🤓
