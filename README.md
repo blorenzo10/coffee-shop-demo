@@ -11,8 +11,9 @@ Below is the list of future features I've planned to add to the project
 - [x] Icon change animation
 - [x] Error handling
 - [x] Charts
-- [x] Xcode Cloud
-- [ ] Unit Testing
+- [x] Unit Testing
+- [ ] UI Tests
+- [ ] Xcode Cloud
 - [ ] Animations
 
 # Requests
