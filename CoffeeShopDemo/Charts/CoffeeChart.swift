@@ -77,6 +77,7 @@ struct CoffeeChart: View {
                     .tint(.accentColor)
             }
         }
+        .accessibilityIdentifier("ChartList")
     }
 }
 
@@ -99,6 +100,7 @@ private extension CoffeeChart {
                 }
             }
         }
+        .accessibilityIdentifier("BarChart")
         .chartForegroundStyleScale([
             Coffee.latte: Color.accentColor,
             Coffee.cappuccino: Color.accentColor.opacity(0.7),

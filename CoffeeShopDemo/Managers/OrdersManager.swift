@@ -17,7 +17,9 @@ final class OrdersManager {
     func add(_ order: Order) throws {
         if order.price >= 10 {
             orders.append(order)
-            LiveActivityManager.shared.simulate()
+            if !CommandLine.arguments.contains("-ui-test") {
+                LiveActivityManager.shared.simulate()
+            }
         } else {
             throw AppError(type: OrderError.minimumNotMet(currentPrice: order.price))
         }

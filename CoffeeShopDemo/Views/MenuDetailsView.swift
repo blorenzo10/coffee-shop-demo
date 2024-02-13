@@ -91,8 +91,9 @@ struct MenuDetailsView: View {
             
             HStack {
                 Spacer()
-                Stepper("Cantidad", value: $quantity, in: 1...5)
+                Stepper("Quantity", value: $quantity, in: 1...5)
                     .labelsHidden()
+                    .accessibilityIdentifier(Identifiers.Steppers.QUANTITY)
                 Spacer()
             }
 
@@ -100,6 +101,7 @@ struct MenuDetailsView: View {
                 order.add(item: .init(item: item, size: selectedSize, quantity: quantity))
                 dismiss()
             }
+            .accessibilityIdentifier(Identifiers.Buttons.ADD_ITEM)
             .buttonStyle(BrownButton())
             .frame(maxWidth: .infinity)
             .background(Color.brown)

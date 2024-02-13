@@ -37,6 +37,7 @@ struct HomeView: View {
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 25, height: 25)
             }
+            .accessibilityIdentifier("MapButton")
             Button {
                 router.routeTo(.history)
             } label : {
@@ -46,6 +47,7 @@ struct HomeView: View {
                     .frame(width: 25, height: 25)
                 
             }
+            .accessibilityIdentifier("HistoryButton")
             .popoverTip(tip)
             .onTapGesture {
                 tip.invalidate(reason: .actionPerformed)
@@ -63,6 +65,7 @@ struct HomeView: View {
                                 .aspectRatio(contentMode: .fill)
                                 .frame(height: 180)
                                 .cornerRadius(12)
+                                .accessibilityIdentifier(item.name)
                             Text(item.name)
                                 .font(.system(size: 18, weight: .bold))
                                 .padding(12)
@@ -82,6 +85,7 @@ struct HomeView: View {
             Button("View my order & checkout") {
                 router.routeTo(.confirmation(order))
             }
+            .accessibilityIdentifier(Identifiers.Buttons.CHECKOUT)
             .buttonStyle(BrownButton())
             .frame(maxWidth: .infinity)
             .background(Color.brown)

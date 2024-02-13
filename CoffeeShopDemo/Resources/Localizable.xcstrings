@@ -81,9 +81,6 @@
     "Cancel" : {
 
     },
-    "Cantidad" : {
-
-    },
     "Cappuccino" : {
 
     },
@@ -141,6 +138,9 @@
       }
     },
     "Data" : {
+
+    },
+    "Date" : {
 
     },
     "Drinks" : {
@@ -277,6 +277,9 @@
     "Pss: you can revert it from the settings tab if you don't like it 😉" : {
 
     },
+    "Quantity" : {
+
+    },
     "Regular" : {
       "localizations" : {
         "en" : {
@@ -342,9 +345,6 @@
       }
     },
     "Total" : {
-
-    },
-    "Total coffee ordered" : {
 
     },
     "Update your app's icon with the new one" : {

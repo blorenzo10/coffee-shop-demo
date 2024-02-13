@@ -55,6 +55,17 @@
                ReferencedContainer = "container:coffee-shop-demo.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "BC7761562B7107540042FDB2"
+               BuildableName = "CoffeeShopAppUITests.xctest"
+               BlueprintName = "CoffeeShopAppUITests"
+               ReferencedContainer = "container:coffee-shop-demo.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

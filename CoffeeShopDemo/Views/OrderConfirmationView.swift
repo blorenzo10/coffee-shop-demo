@@ -77,6 +77,7 @@ struct OrderConfirmationView: View {
                     showingAlert = true
                     viewModel.tryToPlaceOrder(order)
                 }
+                .accessibilityIdentifier(Identifiers.Buttons.PLACE_ORDER)
                 .frame(maxWidth: .infinity)
                 .buttonStyle(BrownButton())
                 .background(Color.brown)
