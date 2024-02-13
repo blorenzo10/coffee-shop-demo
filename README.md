@@ -12,7 +12,7 @@ Below is the list of future features I've planned to add to the project
 - [x] Error handling
 - [x] Charts
 - [x] Unit Testing
-- [ ] UI Tests
+- [x] UI Tests
 - [ ] Xcode Cloud
 - [ ] Animations
 
@@ -21,8 +21,12 @@ I want to provide as much value as I possibly can to the iOS developers who are 
 
 I'll try my best to do it and to make a new article with the details 🤓
 
+# Help
+Do you need help? Post a question in the Q&A Discussion section
+
 # What's included?
 `⚠️ Please Note that this is a live project`
+- [UI Tests](#UI-Tests)
 - [Unit Tests](#Unit-Tests)
 - [Charts](#Charts)
 - [Error handling](#Error-handling)
@@ -34,6 +38,13 @@ I'll try my best to do it and to make a new article with the details 🤓
 - [Type Erasure](#Type-Erasure)
 - [Live Activities](#Live-Activities)
 - [Dynamic Island](#Dynamic-Island)
+
+## UI Tests
+- Article: [Comming soon](https://medium.com/@blorenzop/about)
+- Demo 👇
+
+https://github.com/blorenzo10/coffee-shop-demo/assets/20937316/8f6f0333-7943-44ae-a764-ea3eb2c5382b
+
 
 ## Unit Tests
 - Article: [Unit Test in Swift: A Starting Guide](https://medium.com/@blorenzop/swift-unit-tets-530a8d271f4d) 
