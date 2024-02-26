@@ -1,0 +1,41 @@
+{
+  "configurations" : [
+    {
+      "id" : "8826FE4A-4C81-4681-9A9C-55C4C5EFA16C",
+      "name" : "Address Sanitizer",
+      "options" : {
+        "addressSanitizer" : {
+          "enabled" : true
+        },
+        "mallocGuardEdgesEnabled" : false,
+        "mallocScribbleEnabled" : true,
+        "preferredScreenCaptureFormat" : "screenshot",
+        "threadSanitizerEnabled" : false
+      }
+    },
+    {
+      "id" : "51740CA6-14D3-4973-AC70-79195D86B39D",
+      "name" : "Thread Sanitizer",
+      "options" : {
+        "mallocGuardEdgesEnabled" : false,
+        "mallocScribbleEnabled" : false,
+        "preferredScreenCaptureFormat" : "screenshot",
+        "threadSanitizerEnabled" : true
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:coffee-shop-demo.xcodeproj",
+        "identifier" : "BCFF50342B6699A400011A7A",
+        "name" : "CoffeeShopAppTests"
+      }
+    }
+  ],
+  "version" : 1
+}

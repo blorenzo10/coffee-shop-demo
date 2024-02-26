@@ -26,8 +26,16 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES"
-      shouldAutocreateTestPlan = "YES">
+      shouldUseLaunchSchemeArgsEnv = "YES">
+      <TestPlans>
+         <TestPlanReference
+            reference = "container:Test Plans/TestPlan-Unit.xctestplan"
+            default = "YES">
+         </TestPlanReference>
+         <TestPlanReference
+            reference = "container:Test Plans/TestPlan-UI.xctestplan">
+         </TestPlanReference>
+      </TestPlans>
       <Testables>
          <TestableReference
             skipped = "NO"
@@ -48,6 +56,91 @@
                BlueprintIdentifier = "BC7761562B7107540042FDB2"
                BuildableName = "CoffeeShopAppUITests.xctest"
                BlueprintName = "CoffeeShopAppUITests"
+               ReferencedContainer = "container:coffee-shop-demo.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "BCFF50342B6699A400011A7A"
+               BuildableName = "CoffeeShopAppTests.xctest"
+               BlueprintName = "CoffeeShopAppTests"
+               ReferencedContainer = "container:coffee-shop-demo.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "BC7761562B7107540042FDB2"
+               BuildableName = "CoffeeShopAppUITests.xctest"
+               BlueprintName = "CoffeeShopAppUITests"
+               ReferencedContainer = "container:coffee-shop-demo.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "BC7761562B7107540042FDB2"
+               BuildableName = "CoffeeShopAppUITests.xctest"
+               BlueprintName = "CoffeeShopAppUITests"
+               ReferencedContainer = "container:coffee-shop-demo.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "BC7761562B7107540042FDB2"
+               BuildableName = "CoffeeShopAppUITests.xctest"
+               BlueprintName = "CoffeeShopAppUITests"
+               ReferencedContainer = "container:coffee-shop-demo.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "BCFF50342B6699A400011A7A"
+               BuildableName = "CoffeeShopAppTests.xctest"
+               BlueprintName = "CoffeeShopAppTests"
+               ReferencedContainer = "container:coffee-shop-demo.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "BCFF50342B6699A400011A7A"
+               BuildableName = "CoffeeShopAppTests.xctest"
+               BlueprintName = "CoffeeShopAppTests"
+               ReferencedContainer = "container:coffee-shop-demo.xcodeproj">
+            </BuildableReference>
+            <SelectedTests>
+               <Test
+                  Identifier = "OrderTests/testRepeatLastOrder()">
+               </Test>
+            </SelectedTests>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "BCFF50342B6699A400011A7A"
+               BuildableName = "CoffeeShopAppTests.xctest"
+               BlueprintName = "CoffeeShopAppTests"
+               ReferencedContainer = "container:coffee-shop-demo.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "BCFF50342B6699A400011A7A"
+               BuildableName = "CoffeeShopAppTests.xctest"
+               BlueprintName = "CoffeeShopAppTests"
                ReferencedContainer = "container:coffee-shop-demo.xcodeproj">
             </BuildableReference>
          </TestableReference>

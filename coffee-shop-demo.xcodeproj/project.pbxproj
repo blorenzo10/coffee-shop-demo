@@ -168,6 +168,8 @@
 		BCA575002A5CCFBD0029ECB1 /* CoffeeShopWidgetLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopWidgetLiveActivity.swift; sourceTree = "<group>"; };
 		BCA575042A5CCFBF0029ECB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BCA575062A5CCFBF0029ECB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCAE90262B8AB8E0003C1EBE /* TestPlan-UI.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "TestPlan-UI.xctestplan"; sourceTree = "<group>"; };
+		BCAE90272B8AC630003C1EBE /* Coffee Shop App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Coffee Shop App.entitlements"; sourceTree = "<group>"; };
 		BCAEBB262B21459F002CE7A2 /* RepeatOrderIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatOrderIntent.swift; sourceTree = "<group>"; };
 		BCAFD8E82B3A007300541CD9 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 		BCB63BF02A4B94AA0045B17E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -183,6 +185,7 @@
 		BCC779E32A4E4E4300F5539F /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		BCC779E52A4E4F0300F5539F /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 		BCCD01092AC0DAE700041327 /* ContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerView.swift; sourceTree = "<group>"; };
+		BCE8D3082B84CE1A00FEC043 /* TestPlan-Unit.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "TestPlan-Unit.xctestplan"; sourceTree = "<group>"; };
 		BCF37BA42A5217010098F557 /* MenuDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuDetailsView.swift; sourceTree = "<group>"; };
 		BCF4BEAA2B1FED7600F8A7AA /* CoffeeShopWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopWidget.swift; sourceTree = "<group>"; };
 		BCF4BEAF2B1FEFEF00F8A7AA /* CoffeeOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeOrder.swift; sourceTree = "<group>"; };
@@ -255,6 +258,15 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		BC368FC62B88D7E700DA4492 /* Test Plans */ = {
+			isa = PBXGroup;
+			children = (
+				BCE8D3082B84CE1A00FEC043 /* TestPlan-Unit.xctestplan */,
+				BCAE90262B8AB8E0003C1EBE /* TestPlan-UI.xctestplan */,
+			);
+			path = "Test Plans";
+			sourceTree = "<group>";
+		};
 		BC450A492B41A9CF0072F8EB /* Errors */ = {
 			isa = PBXGroup;
 			children = (
@@ -269,6 +281,8 @@
 		BC6C77292A48DAE80012E96F = {
 			isa = PBXGroup;
 			children = (
+				BCAE90272B8AC630003C1EBE /* Coffee Shop App.entitlements */,
+				BC368FC62B88D7E700DA4492 /* Test Plans */,
 				BCB63BEF2A4B94AA0045B17E /* CoffeeShopDemo */,
 				BCA574FD2A5CCFBD0029ECB1 /* Coffee Shop Widget */,
 				BCFF50362B6699A400011A7A /* CoffeeShopAppTests */,
@@ -921,10 +935,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = "Coffee Shop App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CoffeeShopDemo/Preview Content\"";
-				DEVELOPMENT_TEAM = CTS5987F4Q;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = CoffeeShopDemo/Resources/Info.plist;
@@ -940,9 +955,13 @@
 				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.blorenzo.coffeeshop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -954,10 +973,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = "Coffee Shop App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CoffeeShopDemo/Preview Content\"";
-				DEVELOPMENT_TEAM = CTS5987F4Q;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = CoffeeShopDemo/Resources/Info.plist;
@@ -973,9 +993,13 @@
 				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.blorenzo.coffeeshop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -984,6 +1008,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.blorenzo.CoffeeShopAppUITests;
@@ -1000,6 +1025,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.blorenzo.CoffeeShopAppUITests;

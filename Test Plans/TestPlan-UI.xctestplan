@@ -1,0 +1,31 @@
+{
+  "configurations" : [
+    {
+      "id" : "F972DDF3-74B5-49B0-86EB-00FB1B7ACEB0",
+      "name" : "Spanish",
+      "options" : {
+        "language" : "es"
+      }
+    },
+    {
+      "id" : "E7E68709-BC85-4892-9C81-4B017389C6FC",
+      "name" : "English",
+      "options" : {
+        "language" : "en"
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "testTimeoutsEnabled" : true
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:coffee-shop-demo.xcodeproj",
+        "identifier" : "BC7761562B7107540042FDB2",
+        "name" : "CoffeeShopAppUITests"
+      }
+    }
+  ],
+  "version" : 1
+}
