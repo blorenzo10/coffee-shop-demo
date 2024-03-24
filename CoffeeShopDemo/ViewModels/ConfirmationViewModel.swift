@@ -16,6 +16,9 @@ final class ConfirmationViewModel: ObservableObject {
     func tryToPlaceOrder(_ order: Order) {
         do {
             try OrdersManager.shared.add(order)
+            Task {
+                try await ApiClient().placeOrder()
+            }
         } catch let error as AppError {
             showError = true
             appError = error

@@ -4,7 +4,9 @@
       "id" : "F972DDF3-74B5-49B0-86EB-00FB1B7ACEB0",
       "name" : "Spanish",
       "options" : {
-        "language" : "es"
+        "language" : "es",
+        "repeatInNewRunnerProcess" : true,
+        "testRepetitionMode" : "fixedIterations"
       }
     },
     {

@@ -7,6 +7,8 @@
 
 import SwiftUI
 import TipKit
+import OpenAPIRuntime
+import OpenAPIURLSession
 
 struct HomeView: View {
     @AppStorage("showedUpdateIconView") var updateIconDidShow: Bool = false
@@ -18,15 +20,17 @@ struct HomeView: View {
     @State private var showingMap = false
     @State private var selectedItem: AnyMenuItem? = nil
     @State private var orderPrice: Float = 0.0
+    @State private var specialOffers = [Components.Schemas.SpecialOffer]()
     @State private var order = Order()
     /// Private properties
     private let columns = [GridItem(), GridItem()]
     private let menu = Menu()
     private let tip = HistoryTip()
+    private var apiClient = ApiClient()
     
     var body: some View {
         HStack {
-            Text("Menu")
+            Text("Coffee Shop")
                 .font(.largeTitle)
             Spacer()
             Button {
@@ -54,8 +58,61 @@ struct HomeView: View {
             }
         }
         .padding(.horizontal, 16)
-        
         ScrollView {
+            VStack(alignment: .leading) {
+                Text("Today's offers")
+                    .font(.title)
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack {
+                        ForEach(specialOffers, id: \.self) { offer in
+                            VStack {
+                                Coffee.latte.thumbnail
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fill)
+                                    .frame(height: 80)
+                                    .clipped()
+                                
+                                Text(offer.name ?? "")
+                                    .font(.headline)
+                                    .padding(.top, 4)
+                                
+                                Text(offer.description ?? "")
+                                    .font(.footnote)
+                                    .multilineTextAlignment(.center)
+                                    .padding(.top, 2)
+                                    .padding(.horizontal, 6)
+                                Spacer()
+                                HStack {
+                                    RoundedRectangle(cornerRadius: 12)
+                                        .fill(.clear)
+                                        .stroke(Color.accentColor, lineWidth: 2)
+                                        .overlay {
+                                            Text("$\(String(format: "%.1f", offer.price ?? 0))")
+                                                .font(.headline)
+                                        }
+                                        .padding(6)
+                                    
+                                    Button("+") {}
+                                        .frame(width: 50,  height: 30)
+                                        .font(.system(size: 16, weight: .semibold))
+                                        .background(Color.accentColor)
+                                        .foregroundStyle(.white)
+                                        .clipShape(RoundedRectangle(cornerRadius: 12))
+                                        .padding(6)
+                                    
+                                }
+                                .frame(height: 40)
+                            }
+                            .frame(width: 230, height: 200)
+                            .background(Color.accentColor.opacity(0.2))
+                            .clipShape(RoundedRectangle(cornerRadius: 12))
+                        }
+                    }
+                }
+            }
+            .padding()
+            
+            
             ForEach(Menu.Section.allCases, id: \.self) { menuSection in
                 Section {
                     ForEach(menu.getItems(for: menuSection), id: \.id) { item in
@@ -107,6 +164,13 @@ struct HomeView: View {
         }
         .onAppear {
             checkVersion()
+            Task {
+                do {
+                    specialOffers = try await apiClient.getSpecialOffers()
+                } catch {
+                    print(error)
+                }
+            }
         }
     }
 }

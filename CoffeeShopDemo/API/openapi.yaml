@@ -1,0 +1,70 @@
+
+openapi: '3.0.0'
+info:
+  version: '1.0.0'
+  title: 'CoffeeShop API'
+
+servers:
+  - url: "http://localhost:3002/api"
+    description: "Development"
+paths:
+  /special-offers:
+    get:
+      operationId: getSpacialOffers
+      summary: Get today's offers
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/SpecialOffer'
+
+  /place-order:
+    post:
+      operationId: placeOrder
+      summary: Place a new order
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/OrderInformation'
+      responses:
+        '200':
+          description: Successful response
+
+components:
+  schemas:
+    SpecialOffer:
+      type: object
+      properties:
+        name:
+          type: string
+          example: "Latte & Croissant"
+        description:
+          type: string
+          example: "1 small Latte and 1 regular croissant"
+        image:
+          type: string
+          example: "latte"
+        price:
+          type: number
+          format: float
+          example: 8.9
+
+    OrderInformation:
+      type: object
+      properties:
+        id:
+          type: string
+
+    Error:
+      type: object
+      required:
+        - message
+      properties:
+        message:
+          description: A human readable error message
+          type: string

@@ -1,0 +1,145 @@
+{
+  "uuid": "d72241e5-562e-45c1-9a65-5e37c4d213ae",
+  "lastMigration": 29,
+  "name": "Coffee Shop",
+  "endpointPrefix": "api",
+  "latency": 0,
+  "port": 3002,
+  "hostname": "",
+  "folders": [],
+  "routes": [
+    {
+      "uuid": "de160c45-4ac5-4a66-abfe-0d171080d1ad",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "special-offers",
+      "responses": [
+        {
+          "uuid": "fc435200-e3a8-485c-85d1-a5245ffaa03d",
+          "body": "[\n  {\n    \"name\": \"Latte & Croissant\",\n    \"description\": \"1 small Latte and 1 regular croissant\",\n    \"image\": \"latte\",\n    \"price\": 8.9,\n  },\n  {\n    \"name\": \"Cortado & Muffin\",\n    \"description\": \"1 medium Cortado and 1 Muffin\",\n    \"image\": \"cortado\",\n    \"price\": 8.9,\n  },\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id"
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "7983f8df-1d4a-43c9-9cb5-d7a1651c7055",
+      "type": "http",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "place-order",
+      "responses": [
+        {
+          "uuid": "ac78d31a-5276-4d49-be3a-77a6e83d3a2e",
+          "body": "",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id"
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "c29d0596-fc68-481e-b847-d40fdf861f20",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "coffee-data",
+      "responses": [
+        {
+          "uuid": "8c512672-47bb-4787-a041-38a87aeee1a8",
+          "body": "[\n  {\n    \"date\": \"2023-08-01\",\n    \"details\": [\n      {\n        \"type\": \"latte\",\n        \"amount\": 10\n      },  \n      {\n        \"type\": \"cappuccino\",\n        \"amount\": 3\n      },\n      {\n        \"type\": \"latte\",\n        \"amount\": 3\n      },\n      {\n        \"type\": \"latte\",\n        \"amount\": 2\n      },\n    ]\n  },\n  {\n    \"date\": \"2023-09-01\",\n    \"details\": [\n      {\n        \"type\": \"latte\",\n        \"amount\": 10\n      },  \n      {\n        \"type\": \"cappuccino\",\n        \"amount\": 3\n      },\n      {\n        \"type\": \"latte\",\n        \"amount\": 3\n      },\n      {\n        \"type\": \"latte\",\n        \"amount\": 2\n      },\n    ]\n  },\n  {\n    \"date\": \"2023-10-01\",\n    \"details\": [\n      {\n        \"type\": \"latte\",\n        \"amount\": 10\n      },  \n      {\n        \"type\": \"cappuccino\",\n        \"amount\": 3\n      },\n      {\n        \"type\": \"latte\",\n        \"amount\": 3\n      },\n      {\n        \"type\": \"latte\",\n        \"amount\": 2\n      },\n    ]\n  },\n  {\n    \"date\": \"2023-11-01\",\n    \"details\": [\n      {\n        \"type\": \"latte\",\n        \"amount\": 10\n      },  \n      {\n        \"type\": \"cappuccino\",\n        \"amount\": 3\n      },\n      {\n        \"type\": \"latte\",\n        \"amount\": 3\n      },\n      {\n        \"type\": \"latte\",\n        \"amount\": 2\n      },\n    ]\n  },\n  {\n    \"date\": \"2023-12-01\",\n    \"details\": [\n      {\n        \"type\": \"latte\",\n        \"amount\": 10\n      },  \n      {\n        \"type\": \"cappuccino\",\n        \"amount\": 3\n      },\n      {\n        \"type\": \"latte\",\n        \"amount\": 3\n      },\n      {\n        \"type\": \"latte\",\n        \"amount\": 2\n      },\n    ]\n  },\n  {\n    \"date\": \"2024-01-01\",\n    \"details\": [\n      {\n        \"type\": \"latte\",\n        \"amount\": 10\n      },  \n      {\n        \"type\": \"cappuccino\",\n        \"amount\": 3\n      },\n      {\n        \"type\": \"latte\",\n        \"amount\": 3\n      },\n      {\n        \"type\": \"latte\",\n        \"amount\": 2\n      },\n    ]\n  }\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id"
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    }
+  ],
+  "rootChildren": [
+    {
+      "type": "route",
+      "uuid": "de160c45-4ac5-4a66-abfe-0d171080d1ad"
+    },
+    {
+      "type": "route",
+      "uuid": "7983f8df-1d4a-43c9-9cb5-d7a1651c7055"
+    },
+    {
+      "type": "route",
+      "uuid": "c29d0596-fc68-481e-b847-d40fdf861f20"
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "data": []
+}

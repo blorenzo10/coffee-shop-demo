@@ -7,7 +7,21 @@
 
 import Foundation
 
-enum NetworkErrors: Error {
+enum NetworkErrors: LocalizedError {
     case invalidURL(_ url: URL)
     case apiError(statusCode: Int)
+    
+    var failureReason: String? {
+        switch self {
+        default:
+            "We had problems with our servers"
+        }
+    }
+    
+    var recoverySuggestion: String? {
+        switch self {
+        default:
+            "Please, try again in a few moments"
+        }
+    }
 }
