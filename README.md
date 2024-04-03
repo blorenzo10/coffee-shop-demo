@@ -13,6 +13,7 @@ Below is the list of future features I've planned to add to the project
 - [x] Charts
 - [x] Unit Testing
 - [x] UI Tests
+- [ ] Deep Links
 - [ ] Xcode Cloud
 - [ ] Animations
 
@@ -26,6 +27,7 @@ Do you need help? Post a question in the Q&A Discussion section
 
 # What's included?
 `⚠️ Please Note that this is a live project`
+- [Test Plans](#Test-Plans)
 - [UI Tests](#UI-Tests)
 - [Unit Tests](#Unit-Tests)
 - [Charts](#Charts)
@@ -39,8 +41,14 @@ Do you need help? Post a question in the Q&A Discussion section
 - [Live Activities](#Live-Activities)
 - [Dynamic Island](#Dynamic-Island)
 
+## Swift Open API Genertor
+- Article: [Coming soon](https://medium.com/@blorenzop/about)
+
+## Test Plans
+- Article: [Organize your tests in Xcode using Test Plans](https://medium.com/@blorenzop/test-plans-8b266ce68daf)
+
 ## UI Tests
-- Article: [Comming soon](https://medium.com/@blorenzop/about)
+- Article: [Comming soon](https://medium.com/@blorenzop/swift-ui-tests-5e4704fbbeeb)
 - Demo 👇
 
 https://github.com/blorenzo10/coffee-shop-demo/assets/20937316/8f6f0333-7943-44ae-a764-ea3eb2c5382b
