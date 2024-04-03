@@ -558,7 +558,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				BC11785C2B929F92001C3CE0 /* PBXTargetDependency */,
+				BC190FE52BB2F70500E0462E /* PBXTargetDependency */,
 				BCA575082A5CCFBF0029ECB1 /* PBXTargetDependency */,
 			);
 			name = "Coffee Shop App";
@@ -818,9 +818,9 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		BC11785C2B929F92001C3CE0 /* PBXTargetDependency */ = {
+		BC190FE52BB2F70500E0462E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			productRef = BC11785B2B929F92001C3CE0 /* OpenAPIGenerator */;
+			productRef = BC190FE42BB2F70500E0462E /* OpenAPIGenerator */;
 		};
 		BC77615E2B7107540042FDB2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1214,14 +1214,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		BC11784C2B929CF5001C3CE0 /* XCRemoteSwiftPackageReference "swift-openapi-generator" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/apple/swift-openapi-generator";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.2.1;
-			};
-		};
 		BC1178522B929D6D001C3CE0 /* XCRemoteSwiftPackageReference "swift-openapi-runtime" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/apple/swift-openapi-runtime";
@@ -1267,9 +1259,9 @@
 			package = BC1178552B929DCD001C3CE0 /* XCRemoteSwiftPackageReference "swift-openapi-urlsession" */;
 			productName = OpenAPIURLSession;
 		};
-		BC11785B2B929F92001C3CE0 /* OpenAPIGenerator */ = {
+		BC190FE42BB2F70500E0462E /* OpenAPIGenerator */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = BC11784C2B929CF5001C3CE0 /* XCRemoteSwiftPackageReference "swift-openapi-generator" */;
+			package = BC11785E2B92A0CF001C3CE0 /* XCRemoteSwiftPackageReference "swift-openapi-generator" */;
 			productName = "plugin:OpenAPIGenerator";
 		};
 		BCE282CE2B474D5C009E4AA5 /* HKLogger */ = {
