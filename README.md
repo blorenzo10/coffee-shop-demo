@@ -48,7 +48,7 @@ Do you need help? Post a question in the Q&A Discussion section
 - Article: [Organize your tests in Xcode using Test Plans](https://medium.com/@blorenzop/test-plans-8b266ce68daf)
 
 ## UI Tests
-- Article: [Comming soon](https://medium.com/@blorenzop/swift-ui-tests-5e4704fbbeeb)
+- Article: [Coming soon](https://medium.com/@blorenzop/swift-ui-tests-5e4704fbbeeb)
 - Demo 👇
 
 https://github.com/blorenzo10/coffee-shop-demo/assets/20937316/8f6f0333-7943-44ae-a764-ea3eb2c5382b
@@ -69,7 +69,7 @@ https://github.com/blorenzo10/coffee-shop-demo/assets/20937316/7f4c53a2-475e-4d9
 
 
 ## Error handling
-- Article: Comming soon: [Error handling in Swift](https://medium.com/@blorenzop/error-handling-in-swift-f9ca87490e26)
+- Article: Coming soon: [Error handling in Swift](https://medium.com/@blorenzop/error-handling-in-swift-f9ca87490e26)
 - Demo 👇
 
 https://github.com/blorenzo10/coffee-shop-demo/assets/20937316/7d624d93-cc93-48dc-a6c6-2eac33eba5a4
